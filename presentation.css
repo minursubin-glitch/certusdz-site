@@ -1,0 +1,25 @@
+/* CERTUS mission and partnership presentation */
+#mission{background:#f5f2eb;color:#142334;padding:100px 0 90px}
+#mission>.container{display:block;max-width:1100px}
+#mission .section-head{text-align:center;max-width:800px;margin:0 auto 54px}
+#mission .section-head .label{justify-content:center;color:#80602c;font-size:12px;font-weight:800;letter-spacing:.24em}
+#mission h2{margin:0;color:#142334;font-size:clamp(38px,5vw,64px);line-height:1.12;letter-spacing:-.035em;font-weight:800}
+#mission .mission-copy{max-width:960px;margin:0 auto;counter-reset:mission}
+#mission .mission-copy p{position:relative;counter-increment:mission;margin:0;padding:26px 0 28px 68px;border-top:1px solid #d8d0c0;color:#17293b;font-size:clamp(20px,2.1vw,26px);font-weight:750;line-height:1.65;letter-spacing:-.018em;text-wrap:pretty}
+#mission .mission-copy p::before{content:'0' counter(mission);position:absolute;inset-inline-start:0;top:34px;color:#8c6c38;font-size:13px;line-height:1.8;font-weight:800;letter-spacing:.1em}
+#mission .strategy-goal{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;max-width:1060px;min-height:280px;margin:56px auto 0;padding:54px 56px;background:linear-gradient(135deg,#102334,#0b1521);border:1px solid #ac8b53;border-radius:4px;box-shadow:0 22px 52px rgba(13,29,44,.12);text-align:center}
+#mission .strategy-goal::before{content:'';display:block;width:52px;height:2px;margin-bottom:24px;background:#d5b67b}
+#mission .strategy-goal .label{display:block;width:100%;margin:0 0 18px;color:#e0c28c;text-align:center;font-size:12px;font-weight:800;letter-spacing:.2em}
+#mission .strategy-goal h3{max-width:880px;margin:0 auto;color:#fff;text-align:center;font-size:clamp(26px,3.3vw,42px);font-weight:800;line-height:1.38;letter-spacing:-.025em;text-wrap:balance}
+.friendship{display:flex;grid-column:1/-1;flex-direction:column;align-items:center;justify-content:center;gap:0;padding:40px 28px 30px;margin:8px 0 26px;border:1px solid rgba(218,191,142,.25);border-radius:4px;background:linear-gradient(145deg,rgba(29,46,63,.72),rgba(11,23,35,.9));text-align:center}
+.friendship-flags{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:110px;align-items:start;justify-items:center;direction:ltr}
+.friendship-flags::after{content:'';position:absolute;top:12px;bottom:12px;left:50%;width:1px;background:linear-gradient(transparent,rgba(211,180,123,.7),transparent)}
+.friendship .country{display:flex;flex-direction:column;align-items:center;gap:18px;margin:0}
+.friendship svg{display:block;width:156px;height:104px;border:0;border-radius:0;filter:drop-shadow(0 10px 14px rgba(0,0,0,.3));overflow:visible}
+.friendship .country-name{font-size:13px;font-weight:750;line-height:1.6;letter-spacing:.17em;text-transform:uppercase;color:#f1e9dc}
+.friendship p{max-width:680px;margin:28px auto 0;color:#d5dfe7;font-size:16px;line-height:1.8;letter-spacing:0;text-align:center}
+[dir="rtl"] #mission .mission-copy p{padding:26px 68px 28px 0;letter-spacing:0;text-align:right;line-height:1.85}
+[dir="rtl"] #mission .strategy-goal .label,[dir="rtl"] #mission .strategy-goal h3{text-align:center;letter-spacing:0}
+[dir="rtl"] .friendship .country-name{letter-spacing:0;font-size:17px}
+@media(max-width:700px){#mission{padding:70px 0 60px}#mission .section-head{margin-bottom:32px}#mission .mission-copy p{padding:22px 0 24px 38px;font-size:20px;line-height:1.65;letter-spacing:-.012em}#mission .mission-copy p::before{top:29px;font-size:11px}#mission .strategy-goal{margin-top:34px;min-height:250px;padding:36px 23px}#mission .strategy-goal .label{font-size:11px;line-height:1.7;letter-spacing:.12em}#mission .strategy-goal h3{font-size:27px;line-height:1.45}.friendship{padding:30px 16px 24px;margin:8px 0 22px;align-items:center}.friendship-flags{gap:64px}.friendship svg{width:102px;height:68px}.friendship .country-name{font-size:11px;letter-spacing:.13em}.friendship p{font-size:14px;line-height:1.8;margin-top:22px}[dir="rtl"] #mission .mission-copy p{padding:22px 38px 24px 0;line-height:1.8}}
+@media(prefers-reduced-motion:reduce){#mission .reveal{transition:none}}
