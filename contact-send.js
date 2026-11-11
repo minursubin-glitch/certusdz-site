@@ -34,6 +34,7 @@
           name: data.get('name'), company: data.get('company'), email: data.get('email'), phone: data.get('phone'),
           region: data.get('region'), type: data.get('type'), message: data.get('task'),
           _subject: 'CERTUS — обращение с сайта certusdz.com', _template: 'table',
+          consent: data.get('consent'), privacy_policy: 'https://certusdz.com/'+document.documentElement.lang+'/privacy/',
           _url: location.href.split('?')[0].split('#')[0] + '#contact', _honey: ''
         })
       });
