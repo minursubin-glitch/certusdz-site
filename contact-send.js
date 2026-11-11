@@ -5,12 +5,31 @@
   const status = document.getElementById('formStatus');
   const button = form.querySelector('button[type="submit"]');
   const messages = {
-    ru: { send: 'Отправить обращение', busy: 'Отправляем…', success: 'Обращение принято к отправке на info@certusdz.com. Спасибо! Мы ответим на ваш e-mail.', error: 'Не удалось подтвердить отправку. Данные сохранены в форме. Попробуйте ещё раз или напишите на info@certusdz.com.' },
-    en: { send: 'Send inquiry', busy: 'Sending…', success: 'Your inquiry has been accepted for delivery to info@certusdz.com. Thank you! We will reply by email.', error: 'We could not confirm sending. Your entries remain in the form. Please retry or email info@certusdz.com.' },
-    fr: { send: 'Envoyer la demande', busy: 'Envoi…', success: 'Votre demande a été acceptée pour envoi à info@certusdz.com. Merci ! Nous vous répondrons par e-mail.', error: 'L’envoi n’a pas pu être confirmé. Vos informations restent dans le formulaire. Réessayez ou écrivez à info@certusdz.com.' }
+    ru: { send: 'Отправить обращение', busy: 'Отправляем…', success: 'Обращение принято к отправке на info@certusdz.com. Спасибо! Мы ответим на ваш e-mail.', error: 'Не удалось подтвердить отправку. Данные остались в форме. Повторите попытку или откройте готовое письмо и отправьте его из своего почтового приложения.' },
+    en: { send: 'Send inquiry', busy: 'Sending…', success: 'Your inquiry has been accepted for delivery to info@certusdz.com. Thank you! We will reply by email.', error: 'We could not confirm sending. Your entries remain in the form. Retry, or open the prepared email and send it from your email app.' },
+    fr: { send: 'Envoyer la demande', busy: 'Envoi…', success: 'Votre demande a été acceptée pour envoi à info@certusdz.com. Merci ! Nous vous répondrons par e-mail.', error: 'L’envoi n’a pas pu être confirmé. Vos informations restent dans le formulaire. Réessayez ou ouvrez l’e-mail préparé et envoyez-le depuis votre messagerie.' }
   };
-  messages.ar = {"send": "إرسال الطلب", "busy": "جارٍ الإرسال…", "success": "تم قبول طلبك لإرساله إلى info@certusdz.com. شكرًا لك! سنرد على بريدك الإلكتروني.", "error": "تعذر تأكيد الإرسال. لا تزال بياناتك محفوظة في النموذج. حاول مجددًا أو راسل info@certusdz.com."};
+  messages.ar = {"send": "إرسال الطلب", "busy": "جارٍ الإرسال…", "success": "تم قبول طلبك لإرساله إلى info@certusdz.com. شكرًا لك! سنرد على بريدك الإلكتروني.", "error": "تعذر تأكيد الإرسال. تبقى بياناتك في النموذج. حاول مجددًا أو افتح الرسالة الجاهزة وأرسلها من تطبيق البريد لديك."};
   const copy = () => messages[document.documentElement.lang] || messages.ru;
+  const fallbackLabels = {ru:'Открыть готовое письмо',en:'Open a prepared email',fr:'Ouvrir un e-mail préparé',ar:'فتح رسالة بريد جاهزة'};
+  const fallback = document.createElement('a');
+  fallback.className = 'btn btn-dark mail-fallback';
+  fallback.id = 'mailFallback';
+  fallback.hidden = true;
+  button.after(fallback);
+  function prepareEmail() {
+    const data = new FormData(form);
+    const body = ['CERTUS GROUP — PROJECT INQUIRY',
+      'Name: '+(data.get('name')||''), 'Company: '+(data.get('company')||''),
+      'Email: '+(data.get('email')||''), 'Phone: '+(data.get('phone')||''),
+      'Region: '+(data.get('region')||''), 'Type: '+(data.get('type')||''), '',
+      data.get('task')||''].join('\n');
+    fallback.href = 'mailto:info@certusdz.com?subject='+encodeURIComponent('CERTUS — project inquiry')+'&body='+encodeURIComponent(body);
+    fallback.textContent = fallbackLabels[document.documentElement.lang] || fallbackLabels.ru;
+  }
+  fallback.addEventListener('click',event=>{if(!form.reportValidity())event.preventDefault();else prepareEmail();});
+  form.addEventListener('input',()=>{if(!fallback.hidden)prepareEmail();});
+  document.querySelectorAll('[data-lang]').forEach(control=>control.addEventListener('click',()=>{if(!fallback.hidden)prepareEmail();}));
   let sending = false;
   if (new URLSearchParams(location.search).get('sent') === '1') status.textContent = copy().success;
   form.addEventListener('submit', async event => {
@@ -18,6 +37,7 @@
     if (sending || !form.reportValidity()) return;
     const data = new FormData(form);
     if (String(data.get('_honey') || '').trim()) return;
+    fallback.hidden = true;
     sending = true;
     button.disabled = true;
     form.setAttribute('aria-busy', 'true');
@@ -44,6 +64,8 @@
       form.reset();
     } catch (_) {
       status.textContent = copy().error;
+      prepareEmail();
+      fallback.hidden = false;
     } finally {
       clearTimeout(timeout);
       sending = false;
