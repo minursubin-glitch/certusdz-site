@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#0c1118" name="theme-color"/>
+<meta name="description" content="CERTUS GROUP — industrial construction, engineering and digital project management in Algeria and Africa. ETALON Group’s experience in Russia."/>
+<title>CERTUS GROUP | Industrial construction in Algeria</title>
+<link href="/assets/e458bb6f1279388a19.svg" rel="icon" type="image/svg+xml"/>
+<style>:root {
+  --bg:#0b1016;
+  --bg-2:#111923;
+  --panel:#141d29;
+  --panel-2:#182333;
+  --text:#eef2f5;
+  --muted:#aab4c1;
+  --line:rgba(255,255,255,.09);
+  --gold:#c8a15b;
+  --gold-2:#e0bc78;
+  --dark:#0c121b;
+  --shadow:0 24px 80px rgba(0,0,0,.28);
+  --radius:24px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#091019 0%,#0b1016 18%,#f2f0eb 18%,#f2f0eb 74%,#0b1016 74%,#0b1016 100%);color:#0d141d;}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.noise{position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.04) 0.6px, transparent 0.6px);background-size:7px 7px;opacity:.08;mix-blend-mode:soft-light;z-index:0}
+.container{width:min(1240px,calc(100vw - 40px));margin:0 auto;position:relative;z-index:1}
+.section{padding:110px 0}
+.dark{background:linear-gradient(180deg,#0b1016 0%,#111825 100%);color:var(--text)}
+.glass{backdrop-filter:blur(18px);background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow)}
+.label{display:flex;align-items:center;gap:10px;font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;color:#697586;margin:0 0 18px}
+.label.light{color:#98a7ba}
+.section-top{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end;margin-bottom:46px}
+.section-top h2,.section-head h2,.cta-grid h2,.contact-grid h2,.intelligence-copy h2{font-size:clamp(2.1rem,3.5vw,4.2rem);line-height:.98;letter-spacing:-.04em;margin:0}
+.section-top h2 em,.section-head h2 em,.cta-grid h2 em,.contact-grid h2 em,.intelligence-copy h2 em,.hero-copy h1 em{color:var(--gold);font-style:normal}
+.top-side{font-size:1.06rem;line-height:1.8;color:#5e6875}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(9,15,24,.75);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.brand img{width:44px;height:44px;object-fit:contain;filter:drop-shadow(0 6px 20px rgba(0,0,0,.16))}
+.brand strong{display:block;font-size:2rem;letter-spacing:.09em;line-height:.9}
+.brand small{display:block;color:#b4bfca;font-size:.72rem;letter-spacing:.28em}
+.nav{display:flex;gap:26px;color:#cfd7df}
+.nav a{font-size:.95rem;transition:.2s color}
+.nav a:hover,.nav a:focus-visible{color:#fff}
+.header-tools{display:flex;align-items:center;gap:14px}
+.langs{display:flex;border:1px solid rgba(255,255,255,.12);padding:4px;border-radius:999px;background:rgba(255,255,255,.04)}
+.lang{border:none;background:transparent;color:#cad3dd;border-radius:999px;padding:8px 10px;font-weight:600;cursor:pointer}
+.lang.is-active{background:#fff;color:#0c121b}
+.header-cta{padding:13px 18px;border-radius:999px;background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#111;font-weight:800;box-shadow:0 14px 30px rgba(200,161,91,.24)}
+.menu-toggle{display:none;width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:transparent;padding:0;position:relative}
+.menu-toggle span{position:absolute;left:12px;right:12px;height:2px;background:#fff}
+.menu-toggle span:first-child{top:17px}.menu-toggle span:last-child{top:25px}
+.hero{position:relative;min-height:95svh;display:grid;align-items:end;overflow:hidden;background:#0a1017;color:#fff}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;filter:saturate(1.05)}
+.hero-shade{position:absolute;inset:0;background:radial-gradient(circle at 78% 24%, rgba(208,167,92,.15) 0, transparent 28%),linear-gradient(90deg,rgba(8,13,20,.88) 0%,rgba(8,13,20,.76) 38%,rgba(8,13,20,.36) 62%,rgba(8,13,20,.24) 100%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;padding:120px 0 48px;position:relative;z-index:1;align-items:end}
+.kicker{display:flex;align-items:center;gap:12px;margin-bottom:24px;font-size:.83rem;letter-spacing:.2em;text-transform:uppercase;color:#d4dce5}
+.kicker span{width:10px;height:10px;background:var(--gold)}
+.hero-copy h1{font-size:clamp(3rem,6.3vw,7rem);line-height:.9;letter-spacing:-.055em;margin:0 0 24px;max-width:760px}
+.hero-lead{max-width:700px;font-size:1.18rem;line-height:1.9;color:#d6dde5;margin:0 0 34px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:16px 22px;border-radius:16px;font-weight:800;letter-spacing:.01em;border:1px solid transparent;transition:transform .25s ease,box-shadow .25s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#111;box-shadow:0 14px 30px rgba(200,161,91,.24)}
+.btn-dark{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);color:#fff}
+.hero-points{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:760px}
+.hero-points div{padding:18px 16px;border-top:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}
+.hero-points strong{display:block;font-size:1.6rem;color:#fff;margin-bottom:6px}
+.hero-points span{display:block;color:#bcc7d3;line-height:1.5;font-size:.96rem}
+.hero-side{display:flex;justify-content:flex-end}
+.hero-card{max-width:420px;padding:24px;border-radius:26px;color:#edf2f7;position:relative;top:10px}
+.hero-card-top{display:flex;justify-content:space-between;gap:12px;color:#aeb7c2;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px}
+.hero-card h3{font-size:1.55rem;margin:0 0 12px}
+.hero-card p{color:#d0d7de;line-height:1.7;margin:0 0 18px}
+.hero-card ul{margin:0;padding-left:18px;color:#c0ccd7;display:grid;gap:10px}
+.impact-bar{background:#0b1016;color:#fff;padding:0 0 60px}
+.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:-26px}
+.impact-item{background:linear-gradient(180deg,#121a26 0%,#0e151e 100%);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:24px;box-shadow:var(--shadow)}
+.impact-item span{display:inline-flex;width:44px;height:44px;border-radius:14px;align-items:center;justify-content:center;background:rgba(200,161,91,.15);color:var(--gold);font-weight:800;margin-bottom:14px}
+.impact-item h3{font-size:1.2rem;margin:0 0 10px}.impact-item p{margin:0;color:#aeb8c4;line-height:1.7}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.about-body p{font-size:1.05rem;line-height:1.9;color:#4f5b68}
+.metric-panel{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:18px;border-radius:22px;margin-top:26px;background:linear-gradient(180deg,#111722,#192333)}
+.metric-panel strong{display:block;color:#fff;font-size:1.2rem;margin-bottom:8px}
+.metric-panel span{display:block;color:#c5d0db;line-height:1.6}
+.intelligence-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:44px;align-items:center}
+.intelligence-copy p:not(.label){color:#c0cad6;line-height:1.9;font-size:1.04rem}
+.intel-bullets{display:grid;gap:14px;margin-top:24px}
+.intel-bullets div{padding:18px;border-radius:20px}
+.intel-bullets b{display:block;margin-bottom:7px;font-size:1rem;color:#fff}
+.intel-bullets span{color:#c8d1da;line-height:1.6}
+.intelligence-visual{position:relative}
+.intelligence-visual img{border-radius:28px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.1)}
+.floating-ui{position:absolute;max-width:260px;padding:16px 18px;border-radius:18px;color:#fff}
+.floating-ui span{display:block;color:#c7d1db;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:6px}
+.floating-ui strong{display:block;font-size:1.1rem;line-height:1.35;margin-bottom:4px}
+.floating-ui small{display:block;color:#d7dee5;line-height:1.45}
+.card-a{top:18px;left:-22px}.card-b{bottom:16px;right:-22px}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service-card{padding:24px;border-radius:24px;background:#fff;border:1px solid #e5e7eb;box-shadow:0 16px 40px rgba(15,23,42,.06)}
+.service-card span{display:inline-flex;width:42px;height:42px;border-radius:12px;align-items:center;justify-content:center;background:#0f1722;color:#fff;font-weight:800;margin-bottom:16px}
+.service-card h3{font-size:1.2rem;margin:0 0 10px}.service-card p{margin:0;color:#55606d;line-height:1.75}
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.step{position:relative;padding:26px;border-radius:24px;background:linear-gradient(180deg,#fff 0%,#fbfaf7 100%);border:1px solid #e7e4dc;box-shadow:0 16px 40px rgba(15,23,42,.05)}
+.step b{display:inline-flex;width:48px;height:48px;border-radius:16px;align-items:center;justify-content:center;background:rgba(200,161,91,.14);color:#926c2f;font-size:1rem;margin-bottom:18px}
+.step h3{font-size:1.1rem;margin:0 0 10px}.step p{margin:0;color:#596472;line-height:1.7}
+.gallery-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+.gallery-card{position:relative;overflow:hidden;border-radius:30px;min-height:280px;background:#111;border:1px solid rgba(0,0,0,.08);box-shadow:var(--shadow)}
+.gallery-card.large{grid-row:span 2;min-height:580px}
+.gallery-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.gallery-card:hover img{transform:scale(1.04)}
+.gallery-card figcaption{position:absolute;inset:auto 0 0 0;padding:26px;background:linear-gradient(180deg,transparent 0%,rgba(7,10,15,.78) 60%,rgba(7,10,15,.95) 100%);color:#fff}
+.gallery-card span{display:block;font-size:.76rem;letter-spacing:.18em;color:#c5a767;text-transform:uppercase;margin-bottom:8px}
+.gallery-card b{font-size:1.15rem;line-height:1.35}
+.cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:start}
+.cta-points{display:grid;gap:14px}
+.cta-points > div{padding:22px;border-radius:22px}
+.cta-points strong{display:block;font-size:1.05rem;color:#fff;margin-bottom:10px}
+.cta-points p{margin:0;color:#c9d2dc;line-height:1.7}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:start}
+.contact-form{padding:26px;border-radius:28px;background:#fff;border:1px solid #e7e5df;box-shadow:0 20px 60px rgba(15,23,42,.08);display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-form label{display:grid;gap:8px;font-weight:700;color:#243041;font-size:.94rem}.contact-form .full{grid-column:1/-1}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;padding:15px 16px;border-radius:16px;border:1px solid #d8dde4;background:#f9fafb;font:inherit;color:#111;resize:vertical}
+.form-actions{display:flex;gap:14px;grid-column:1/-1;flex-wrap:wrap;margin-top:6px}.form-status{grid-column:1/-1;margin:4px 0 0;color:#55606d}
+.site-footer{padding:26px 0;background:#0b1016;color:#cad4dd;border-top:1px solid rgba(255,255,255,.08)}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-inner p{margin:6px 0 0;color:#97a4b2}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .75s ease, transform .75s ease}.reveal.visible{opacity:1;transform:none}.delay-1{transition-delay:.12s}.delay-2{transition-delay:.22s}
+@media (max-width: 1120px){
+  .hero-grid,.intelligence-grid,.contact-grid,.cta-grid,.split-grid,.section-top,.gallery-grid{grid-template-columns:1fr}
+  .timeline{grid-template-columns:repeat(2,1fr)}
+  .service-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-card.large{grid-row:auto;min-height:360px}
+  .hero-side{justify-content:flex-start}
+  .card-a{left:12px}.card-b{right:12px}
+}
+@media (max-width: 860px){
+  body{background:linear-gradient(180deg,#091019 0%,#0b1016 12%,#f2f0eb 12%,#f2f0eb 79%,#0b1016 79%,#0b1016 100%)}
+  .nav{position:fixed;inset:78px 18px auto 18px;display:none;flex-direction:column;background:#101722;border:1px solid rgba(255,255,255,.08);padding:18px;border-radius:20px;box-shadow:var(--shadow)}
+  .nav.open{display:flex}.menu-toggle{display:block}.header-cta{display:none}
+  .hero-grid{padding:108px 0 34px}
+  .hero-copy h1{font-size:clamp(2.5rem,12vw,4.8rem)}
+  .hero-points,.metric-panel,.impact-grid,.service-grid,.timeline{grid-template-columns:1fr}
+  .contact-form{grid-template-columns:1fr}
+  .brand strong{font-size:1.6rem}.brand small{letter-spacing:.22em;font-size:.64rem}
+}
+@media (max-width: 560px){
+  .container{width:min(100vw - 28px, 1240px)}
+  .header-inner{gap:10px}.langs{display:none}
+  .hero-lead{font-size:1.03rem;line-height:1.75}.btn{width:100%}
+  .hero-actions{flex-direction:column}.hero-card{padding:20px}.section{padding:86px 0}
+  .floating-ui{position:static;margin-top:12px;max-width:none}
+  .gallery-card,.gallery-card.large{min-height:260px;border-radius:24px}
+  .footer-inner{flex-direction:column;align-items:flex-start}
+}
+
+/* CERTUS GROUP | Partner portfolio / editorial v3 */
+.partner-trust{position:relative;background:linear-gradient(115deg,#0c131c 0%,#111b28 58%,#142131 100%);color:#fff;padding:74px 0 34px;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(201,159,80,.25);overflow:hidden}
+.partner-trust:before{content:'';position:absolute;right:-9vw;top:-12vw;width:55vw;height:55vw;border-radius:50%;border:1px solid rgba(208,167,92,.09);box-shadow:0 0 0 65px rgba(208,167,92,.015),0 0 0 150px rgba(208,167,92,.015);pointer-events:none}
+.partner-trust-grid{display:grid;grid-template-columns:0.8fr 1.2fr;gap:6%;align-items:center}
+.trust-kicker{display:flex;align-items:center;gap:12px;font-size:.72rem;letter-spacing:.2em;font-weight:800;color:#d2bb88;margin-bottom:18px}.gold-dash{width:22px;height:2px;background:var(--gold)}
+.trust-lead h2{font-size:clamp(2.7rem,4.4vw,5.2rem);line-height:.98;letter-spacing:-.045em;margin:0 0 22px}.trust-lead h2 em{font-style:normal;color:var(--gold)}
+.trust-lead p{font-size:1rem;color:#bec9d4;line-height:1.75;margin:0;max-width:485px}
+.trust-customers{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.trust-logo{display:flex;flex-direction:column;justify-content:center;min-height:112px;padding:23px 22px;border:1px solid rgba(255,255,255,.13);background:linear-gradient(135deg,rgba(255,255,255,.065),rgba(255,255,255,.02));position:relative}
+.trust-logo:after{content:'↗';position:absolute;right:14px;top:11px;color:rgba(201,159,80,.8);font-size:1rem}
+.trust-logo strong{font-size:clamp(1rem,1.55vw,1.45rem);font-weight:850;letter-spacing:.05em;line-height:1.25;max-width:100%;overflow-wrap:anywhere}.trust-logo strong span{color:var(--gold)}
+.trust-logo small{margin-top:9px;color:#9cabb9;font-size:.64rem;letter-spacing:.14em;line-height:1.45}
+.trust-disclaimer{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:34px;color:#8f9eae;font-size:.76rem;line-height:1.6}
+.trust-disclaimer span{max-width:830px}.trust-disclaimer a{white-space:nowrap;color:#d9b875;border-bottom:1px solid rgba(217,184,117,.4);padding-bottom:4px}
+.hero-partner-proof{display:flex;align-items:center;gap:9px;margin-bottom:23px;font-size:.75rem;letter-spacing:.06em;line-height:1.5;color:#d2dae3}.hero-partner-proof a{color:#e1bd7c;font-size:1.2rem}.hero-proof-dot{width:7px;height:7px;background:var(--gold);border-radius:50%;flex-shrink:0;box-shadow:0 0 0 4px rgba(200,161,91,.16)}
+.partner-projects{background:#eae9e4;color:#111a26;position:relative}.partner-projects .container{z-index:1}
+.partner-projects-intro{display:grid;grid-template-columns:1fr .68fr;gap:8%;align-items:end;margin-bottom:36px}
+.partner-projects h2{font-size:clamp(2.8rem,5.1vw,6rem);letter-spacing:-.05em;line-height:.98;margin:0;max-width:840px}.partner-projects h2 em{font-style:normal;color:#9b7537}
+.partner-projects-side{display:flex;align-items:start;gap:18px}
+.partner-seal{display:grid;flex:0 0 143px;border-left:2px solid #b58d4b;padding:8px 12px;gap:5px}
+.partner-seal span{font-size:.57rem;letter-spacing:.13em;color:#677380;font-weight:800}.partner-seal strong{font-size:1.7rem;letter-spacing:.02em}.partner-seal small{font-size:.58rem;color:#8a959d}
+.partner-projects-side>p{margin:0;font-size:.94rem;color:#5d6976;line-height:1.7}
+.projects-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.filter-pill{cursor:pointer;border:1px solid #cdd0ce;background:transparent;color:#35414e;padding:11px 17px;min-height:44px;border-radius:999px;letter-spacing:.02em;font-size:.83rem;font-weight:700;font-family:inherit}
+.filter-pill span{margin-left:7px;color:#8b929a;font-size:.72rem}.filter-pill.is-active{border-color:#16202a;background:#16202a;color:#fff}.filter-pill.is-active span{color:#d4b477}
+.project-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:stretch}
+.project-case{position:relative;min-width:0;background:#fff;border:1px solid #dce0df;display:flex;flex-direction:column;padding:26px;min-height:345px;transition:transform .25s ease,box-shadow .25s ease}
+.project-case:hover{transform:translateY(-4px);box-shadow:0 17px 40px rgba(8,17,26,.10)}.project-case[hidden]{display:none!important}
+.project-case.case-feature{grid-column:span 2;background:#101a25;color:#fff;border-color:#101a25;padding:32px;min-height:370px;overflow:hidden}
+.project-case.case-feature:before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(135deg,transparent 0,transparent 32px,rgba(255,255,255,.017) 33px,transparent 34px),radial-gradient(circle at 87% 36%,rgba(200,161,91,.19),transparent 42%);pointer-events:none}
+.case-surface{position:relative}.case-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:26px}.case-index{font-weight:850;letter-spacing:.12em;font-size:.74rem;color:#937b4b}.case-feature .case-index{color:#c9ad71}
+.case-sector{font-weight:850;letter-spacing:.13em;font-size:.67rem;color:#7e8893;text-align:right}.case-feature .case-sector{color:#b9c8d6}
+.project-case h3{font-size:clamp(1.3rem,1.8vw,2rem);letter-spacing:-.025em;margin:0 0 12px;line-height:1.13;max-width:100%;overflow-wrap:anywhere}
+.case-feature h3{font-size:clamp(2.2rem,3.2vw,3.5rem);letter-spacing:-.05em}
+.case-client{font-size:.79rem;font-weight:650;line-height:1.55;color:#8a693f;margin:0 0 12px}.case-feature .case-client{color:#dcc594}
+.case-text{color:#56626f;font-size:.9rem;line-height:1.7;margin:0 0 20px}.case-feature .case-text{color:#c4cfda;max-width:650px;font-size:1rem}
+.case-metrics{display:flex;gap:20px;flex-wrap:wrap;margin-top:24px}.case-metrics div{display:flex;flex-direction:column;gap:6px;min-width:0}
+.case-metrics b{font-size:clamp(1.3rem,2.15vw,2.3rem);letter-spacing:-.04em;white-space:nowrap}.case-metrics b small{font-size:.55em;letter-spacing:0}
+.case-metrics span{font-size:.73rem;color:#75818e}.case-feature .case-metrics span{color:#aabaca}.case-feature .case-metrics b{color:#f4f2eb}
+.case-metrics.compact{margin-top:auto;gap:15px}.case-metrics.compact b{font-size:1.45rem}
+.case-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:24px;font-size:.74rem;line-height:1.4;color:#6e7984}.case-feature .case-foot{position:relative;color:#b7c2cd}
+.case-symbol{color:#b68f4d;font-size:1.25rem}.portfolio-note{display:flex;gap:12px;margin-top:23px;padding:18px 20px;background:#e1e0da;border-left:2px solid #b58c44;color:#64717b;font-size:.78rem;line-height:1.7}.portfolio-note p{margin:0}.portfolio-note-icon{flex:0 0 19px;width:19px;height:19px;border:1px solid currentColor;display:grid;place-items:center;border-radius:50%;font-size:.7rem;font-weight:800}
+@media(max-width:1120px){.partner-trust-grid{grid-template-columns:1fr}.trust-customers{margin-top:30px}.partner-projects-intro{grid-template-columns:1fr}.partner-projects-side{margin-top:18px;max-width:750px}.project-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:690px){.partner-trust{padding:54px 0 34px}.trust-customers{grid-template-columns:1fr 1fr;gap:8px}.trust-logo{min-height:95px;padding:16px 13px}.trust-logo strong{font-size:.94rem}.trust-logo small{font-size:.51rem}.trust-disclaimer{flex-direction:column;align-items:flex-start;padding-top:24px}.partner-projects-side{flex-direction:column}.project-cards{grid-template-columns:1fr}.project-case.case-feature{grid-column:auto;padding:25px}.project-case{padding:21px;min-height:300px}.case-feature h3{font-size:2.2rem}.case-metrics{gap:15px}.partner-projects h2{font-size:2.8rem}}
+
+@media(max-width:690px){.trust-logo:after{display:none}.trust-logo strong{font-size:.84rem;letter-spacing:.025em}.trust-logo{min-height:114px}.trust-logo small{font-size:.54rem}.trust-customers{row-gap:10px}}
+
+.gallery-disclaimer{color:#657080;font-size:.82rem;line-height:1.7;margin:25px 0 0;padding:12px 16px;border-left:2px solid #c8a15b;background:rgba(200,161,91,.07)}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+
+/* Avoid intrinsic grid overflow with percentage row-gap on mobile */
+.partner-trust-grid{column-gap:6%;row-gap:30px;gap:30px 6%}
+@media(max-width:1120px){.trust-customers{margin-top:0}}
+</style><style>/* CERTUS GROUP — client and project experience system v4 */
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.structure-v4{background:#0e1721;color:#f8f7f4;padding:70px 0 84px;position:relative;overflow:hidden;border-top:1px solid rgba(211,174,111,.25)}
+.structure-v4:before{content:"";pointer-events:none;position:absolute;inset:0;background:radial-gradient(ellipse at 88% 30%,rgba(200,161,91,.16),transparent 50%),repeating-linear-gradient(90deg,transparent 0,transparent 129px,rgba(255,255,255,.018) 130px)}
+.structure-inner{display:grid;gap:35px}
+.structure-intro{max-width:1000px}
+.struct-eyebrow,.client-eyebrow{font-size:.72rem;letter-spacing:.2em;font-weight:900;color:#c5a16a;line-height:1.5;margin-bottom:18px}
+.structure-intro h2{font-size:clamp(2.2rem,4.35vw,5rem);line-height:1.04;letter-spacing:-.045em;font-weight:750;margin:0 0 18px;color:#fff}.structure-intro h2 em{font-style:normal;color:#d5ad69}
+.structure-intro>p{max-width:820px;color:#acb9c7;line-height:1.75;font-size:1.02rem;margin:0}
+.brand-route{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:16px;align-items:stretch;margin-top:8px}
+.brand-node{border:1px solid rgba(255,255,255,.13);background:linear-gradient(130deg,rgba(255,255,255,.085),rgba(255,255,255,.02));padding:26px 25px;min-height:182px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.brand-node span{font-size:.64rem;font-weight:800;letter-spacing:.14em;line-height:1.5;color:#d0b278}
+.brand-node strong{font-size:clamp(1.8rem,2.9vw,3.2rem);letter-spacing:-.04em;line-height:1.06;color:#fff;margin:13px 0 10px}
+.brand-node p{margin:0;font-size:.87rem;line-height:1.55;color:#bfccd7}.brand-node.etalon-node{border-left:3px solid #d4aa65}.brand-node.certus-node{border:1px solid rgba(210,163,93,.52);background:linear-gradient(135deg,rgba(194,139,69,.22),rgba(255,255,255,.02))}
+.brand-arrow{display:grid;justify-items:center;align-content:center;gap:8px;min-width:90px;color:#d5ad69}.brand-arrow>span:first-child{font-size:3rem;line-height:1}.brand-arrow>span:last-child{text-align:center;font-size:.55rem;letter-spacing:.1em;max-width:76px;line-height:1.45;color:#aebbce}
+.clients-v4{background:#ebe9e2;color:#10202c;padding-top:110px;padding-bottom:110px;position:relative}
+.client-head{display:grid;grid-template-columns:1fr 260px;gap:28px;align-items:end;margin-bottom:38px}
+.client-head h2{font-size:clamp(2.9rem,5vw,6rem);letter-spacing:-.055em;line-height:.96;margin:0 0 22px}.client-head h2 em{font-style:normal;color:#ad8449}
+.client-head-copy>p{max-width:700px;font-size:1.03rem;color:#596776;line-height:1.8;margin:0}
+.client-statrow{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:end}.client-statrow>div{border-top:1px solid #bac2c8;padding-top:12px}
+.client-statrow b{display:block;color:#12202a;font-size:3.2rem;line-height:1;font-weight:750;letter-spacing:-.05em}.client-statrow span{display:block;color:#65717b;letter-spacing:.13em;font-size:.65rem;font-weight:800;line-height:1.4;margin-top:9px}
+.client-filters{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:16px 0;border-top:1px solid #c7c9c6;border-bottom:1px solid #c7c9c6;margin-bottom:24px}
+.client-pills{display:flex;gap:9px;flex-wrap:wrap}.client-pill{padding:11px 21px;cursor:pointer;border-radius:30px;border:1px solid #b4bfbe;font:700 .86rem inherit;font-size:.84rem;font-family:inherit;font-weight:800;letter-spacing:.025em;background:transparent;color:#435260;transition:background .2s,color .2s}
+.client-pill:hover{border-color:#18222e}.client-pill.active{background:#131f2c;color:white;border-color:#131f2c}
+.client-search{position:relative;flex:0 1 320px}.client-search input{width:100%;min-height:46px;border:1px solid #c4c9c9;border-radius:40px;padding:10px 16px 10px 40px;font:inherit;color:#17212b;background:#f8f7f3;outline-offset:2px}.client-search>span{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#657080;font-size:1.35rem}
+.client-list-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:20px;font-size:.7rem;font-weight:900;letter-spacing:.14em;color:#7c8184}.client-list-heading>span:last-child{letter-spacing:0;font-size:.85rem;color:#6a7380}
+.client-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.client-tile{cursor:pointer;display:flex;flex-direction:column;text-align:left;padding:0;min-width:0;border:1px solid #d1d7d7;background:#fff;color:#121b23;box-shadow:0 8px 30px rgba(24,34,44,.055);transition:transform .28s,box-shadow .28s,border-color .28s;font:inherit;appearance:none;position:relative;overflow:hidden}
+.client-tile:hover,.client-tile:focus-visible{transform:translateY(-4px);box-shadow:0 20px 45px rgba(20,35,53,.15);border-color:#bc975c;outline-offset:2px}
+.client-tile:focus-visible{outline:2px solid #ab7e42}
+.client-tile .tile-media{display:block;height:185px;width:100%;position:relative;overflow:hidden;background:#1f313d}
+.client-tile .tile-media img{width:100%;height:100%;object-fit:cover;filter:saturate(.9);transition:transform .4s ease}.client-tile:hover .tile-media img{transform:scale(1.045)}
+.client-tile .tile-media:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,22,30,.35),transparent 56%)}
+.client-tile .tile-source{position:absolute;top:14px;left:16px;z-index:1;color:#fff;font-weight:900;font-size:.68rem;letter-spacing:.1em;padding:6px 10px;background:rgba(14,27,38,.84);border-left:2px solid #d8b371}
+.client-tile .tile-body{padding:22px 21px 17px;display:flex;flex-direction:column;flex:1;min-height:162px}
+.client-tile .tile-body strong{display:block;font-size:clamp(1.16rem,1.45vw,1.5rem);letter-spacing:-.03em;line-height:1.2;overflow-wrap:anywhere}
+.client-tile .tile-body p{font-size:.86rem;line-height:1.55;color:#65707d;margin:11px 0 22px}
+.client-tile .tile-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:15px;border-top:1px solid #e1e4e4;font-size:.77rem;font-weight:750;color:#7b633b}
+.client-tile .tile-foot span:last-child{font-size:1.3rem;color:#a77a3d;line-height:1}
+.clients-empty{padding:46px;text-align:center;background:#fff;color:#76808b}
+.client-port-note{display:flex;gap:15px;margin-top:28px;background:#dedfd9;padding:20px 23px;border-left:2px solid #ac8446;color:#6a7280;font-size:.81rem;line-height:1.7}
+.client-port-note p{margin:0}.note-point{flex:0 0 22px;width:22px;height:22px;border:1px solid currentColor;border-radius:50%;display:grid;place-items:center;font-weight:800}
+.detail-shade{position:fixed;inset:0;z-index:101;background:rgba(7,13,20,.82);backdrop-filter:blur(12px)}
+.client-detail{position:fixed;z-index:102;left:50%;top:4vh;transform:translateX(-50%);width:min(1100px,calc(100vw - 28px));height:92vh;background:#f1efe9;color:#111b24;box-shadow:0 32px 100px rgba(0,0,0,.55);overflow:auto;border:1px solid rgba(255,255,255,.17);overscroll-behavior:contain}
+.detail-shade[hidden],.client-detail[hidden]{display:none!important}body.detail-open{overflow:hidden}
+.detail-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;position:sticky;top:0;z-index:5;background:#0d1621;color:#fff;padding:14px 22px;border-bottom:1px solid rgba(255,255,255,.1)}
+.detail-back{color:#d9be8e;font-size:.84rem;font-weight:800}.detail-bar-logo{font-weight:850;letter-spacing:.16em;font-size:.77rem}.detail-bar-logo i{font-style:normal;color:#748494;font-weight:550}
+#detailClose{border:1px solid rgba(255,255,255,.2);color:#fff;background:transparent;width:40px;height:40px;font-size:1.8rem;line-height:1;cursor:pointer}
+.detail-cover{position:relative;min-height:330px;display:flex;align-items:end;padding:35px 42px;background:#18232d;color:#fff;overflow:hidden}
+.detail-cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.detail-cover:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,17,24,.92) 0%,rgba(9,17,24,.68) 55%,rgba(9,17,24,.2) 100%)}
+.detail-cover-copy{position:relative;z-index:1;max-width:720px}
+.detail-cover-copy>span{font-size:.73rem;font-weight:900;letter-spacing:.19em;color:#dfbb80}
+.detail-cover h2{font-size:clamp(2.4rem,4.4vw,4.8rem);letter-spacing:-.05em;line-height:1.03;margin:16px 0}.detail-cover p{font-size:.98rem;line-height:1.75;color:#e0e3e5;max-width:700px;margin:0}
+.detail-content{padding:38px 42px 50px}
+.detail-leadline{display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center;padding-bottom:25px;border-bottom:1px solid #cfd3d1;margin-bottom:20px}
+.detail-leadline>div>span{display:block;font-size:.65rem;font-weight:900;letter-spacing:.16em;color:#7d858d;margin-bottom:8px}
+.detail-leadline strong{font-size:1.16rem;color:#17222d;line-height:1.6}.detail-leadline b{font-size:.75rem;letter-spacing:.1em;color:#99743c}
+.detail-project{display:grid;grid-template-columns:210px 1fr;gap:24px;padding:27px 0;border-bottom:1px solid #d7d9d6;align-items:start}
+.detail-project>img{width:100%;height:165px;object-fit:cover;background:#d9d8d2}
+.detail-project-head{display:flex;align-items:center;flex-wrap:wrap;gap:10px 18px;color:#876b43;font-size:.73rem;font-weight:850;letter-spacing:.06em;margin-bottom:11px}
+.detail-project h3{font-size:1.5rem;line-height:1.18;letter-spacing:-.025em;margin:0 0 11px}
+.detail-project p{font-size:.94rem;line-height:1.75;color:#53616b;margin:0 0 14px}
+.detail-metrics{display:flex;gap:20px;flex-wrap:wrap;margin:18px 0 13px}.detail-metric{display:grid;gap:5px}.detail-metric b{font-size:1.35rem;color:#1b2732;letter-spacing:-.04em}.detail-metric span{font-size:.73rem;color:#777d82}
+.detail-state{padding:10px 13px;background:#e5e3db;border-left:2px solid #bf9659;font-size:.78rem;color:#69583e;line-height:1.5;margin-top:10px}
+.detail-source{font-size:.73rem;color:#87929a;margin-top:11px}.detail-cta{display:flex;gap:20px;justify-content:space-between;align-items:center;padding:28px 0 0}.detail-cta strong{max-width:520px;font-size:1.35rem;line-height:1.4}.detail-cta a{background:#13202a;color:#fff;padding:15px 23px;font-weight:850;font-size:.87rem;white-space:nowrap}
+@media(max-width:1160px){.brand-route{grid-template-columns:1fr auto 1fr}.client-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.brand-route{grid-template-columns:1fr;gap:10px}.brand-arrow{min-width:0;display:flex;gap:13px;justify-content:flex-start;padding:0 15px}.brand-arrow>span:first-child{font-size:1.65rem}.brand-arrow>span:last-child{max-width:none}.client-head{grid-template-columns:1fr}.client-statrow{max-width:320px}.client-filters{align-items:stretch;flex-direction:column}.client-search{flex:0 1 auto}.detail-cover{min-height:290px;padding:29px 26px}.detail-content{padding:25px 23px 30px}.detail-project{grid-template-columns:1fr;gap:15px}.detail-project>img{height:210px}.detail-leadline{grid-template-columns:1fr}.detail-cta{align-items:stretch;flex-direction:column}.detail-cta a{text-align:center}.client-detail{top:1vh;height:98vh;width:calc(100vw - 12px)}}
+@media(max-width:520px){.client-grid{grid-template-columns:1fr}.clients-v4{padding:75px 0}.structure-v4{padding:55px 0}.client-head h2{font-size:2.8rem}.detail-cover h2{font-size:2.35rem}.detail-bar{gap:7px;padding:10px 12px}.detail-bar-logo{font-size:.6rem}.detail-back{font-size:.76rem}.client-pill{padding:10px 16px}.langs{display:flex!important;padding:2px}.lang{padding:6px 7px;font-size:.72rem}.brand strong{font-size:1.34rem}.brand small{font-size:.53rem}.brand img{width:34px}.brand{gap:6px}.header-tools{gap:6px}.menu-toggle{width:34px;height:34px}.menu-toggle span{left:9px;right:9px}}
+@media(prefers-reduced-motion:reduce){.client-tile,.client-tile .tile-media img{transition:none}}
+
+/* Keep deep-link anchors below the sticky header. */
+html{scroll-padding-top:96px}#group,#clients,#contact,#about,#intelligence,#services,#process{scroll-margin-top:96px}
+
+/* ETALON-only portfolio: search remains full-width on small screens. */
+.client-filters{justify-content:flex-end}.client-search{flex-basis:400px}
+</style>
+<style id="mobile-phone-edition">
+@media(max-width:760px){html,body{width:100%;max-width:100%;overflow-x:hidden}body{font-size:16px;-webkit-text-size-adjust:100%}.container{width:calc(100% - 28px);max-width:100%}.section{padding-top:60px;padding-bottom:60px}.hero-grid{padding-top:65px}.hero-copy h1{font-size:clamp(34px,10vw,52px);line-height:1.05;overflow-wrap:anywhere}.section-top h2,.section-head h2,.partner-projects h2,.client-head h2{font-size:clamp(28px,8vw,40px);line-height:1.08}.nav{max-height:calc(100dvh - 100px);overflow-y:auto;z-index:100}.nav a,.btn,button{min-height:44px}.hero-card,.project-case,.client-tile{max-width:100%;min-width:0}.client-grid,.project-cards,.service-grid,.gallery-grid,.metric-panel{grid-template-columns:minmax(0,1fr)}.trust-customers{grid-template-columns:repeat(2,minmax(0,1fr))}.detail-cover h2{overflow-wrap:anywhere}.client-detail{max-height:98dvh;overflow-y:auto}.header-inner{min-width:0}.brand{min-width:0}.brand strong{font-size:1.16rem}.brand small{letter-spacing:.08em}.header-tools{flex-shrink:0}.hero-actions .btn{width:100%}img{height:auto}}
+@media(max-width:390px){.brand strong{font-size:1rem}.brand small{font-size:.48rem}.trust-customers{grid-template-columns:1fr 1fr}.container{width:calc(100% - 24px)}}
+</style>
+<style id="iphone-visible-content-fix">
+/* Never hide website content behind viewport-triggered animations in iOS file previews. */
+.reveal,.reveal.visible{opacity:1!important;transform:none!important;transition:none!important;visibility:visible!important}
+@media(max-width:760px){.section{min-height:0!important}.reveal{animation:none!important}}
+</style>
+<style>
+/* iPhone: compact continuous document; never reserve empty full-screen panels */
+html,body{overflow-x:hidden!important;scroll-snap-type:none!important}
+section,.section,.clients-v4,.client-head,.client-grid,.client-filters{min-height:0!important;height:auto!important;max-height:none!important}
+.reveal,.reveal.visible{opacity:1!important;visibility:visible!important;transform:none!important;animation:none!important;transition:none!important}
+.client-port-note{display:none!important}
+.client-static-tile{background:#fff;border:1px solid #ddd;margin:0 0 12px;padding:18px;border-radius:8px;color:#20242a}
+.client-static-tile summary{cursor:pointer;display:flex;flex-direction:column;gap:8px;list-style:none}
+.client-static-tile summary strong{font-size:1.05rem}
+.client-static-tile summary span{font-size:.86rem;color:#5d6570}
+.client-static-tile summary:after{content:'Подробнее +';font-size:.8rem;color:#a37e46}
+.static-project{padding:14px 0;border-top:1px solid #e2e2e2;margin-top:12px}
+.static-project h3{font-size:1rem;margin:0 0 8px}.static-project p{font-size:.88rem;line-height:1.5;margin:4px 0}
+@media(max-width:760px){
+ .clients-v4{padding:48px 0!important}
+ .client-head,.client-head-copy,.client-filters,.client-grid,.client-list-heading{margin-top:0!important;transform:none!important}
+ .client-head{display:block!important;margin-bottom:24px!important}
+ .client-head-copy{display:block!important;opacity:1!important;visibility:visible!important}
+ .client-grid{display:grid!important;grid-template-columns:1fr!important;gap:12px!important}
+ .client-search{min-height:46px!important}
+ .client-search input{display:block!important;width:100%!important;opacity:1!important;visibility:visible!important}
+ .section{padding-top:48px!important;padding-bottom:48px!important}
+}
+</style><style>
+/* Readable contact section and bidirectional layout */
+#contact{background:#0c1622;color:#f6f8fb}#contact h2{color:#fff}#contact h2 em{color:#edc77e}#contact .label{color:#edc77e}#contact [data-t="contact_intro"]{color:#e2e8f0;line-height:1.8}#contact .contact-details a{color:#fff;direction:ltr;unicode-bidi:isolate;justify-self:start;text-decoration:underline;text-underline-offset:6px}#contact .contact-details a:hover{color:#f0ca81}#contact .contact-form{color:#142132;background:#fff}#contact .contact-form label{color:#1e293b}#contact .form-status{color:#334155}#contact .form-status a{color:#173b67;text-decoration:underline}#contact a:focus-visible,.lang:focus-visible{outline:3px solid #dbb56b;outline-offset:5px}.friendship{grid-column:1/-1;display:flex;align-items:center;gap:18px;padding:20px 0}.friendship p{margin:0}.friendship-flags{display:flex;align-items:center;gap:12px;flex-shrink:0}.friendship svg{width:54px;height:36px;border-radius:4px;border:1px solid #64748b}.friendship-flags span{color:#c8a15b;font-size:24px}.strategy-goal{margin-top:32px;padding:26px;border:1px solid #b89657;border-radius:20px;grid-column:1/-1}.strategy-goal h3{font-size:clamp(21px,2.4vw,32px);line-height:1.5;margin:8px 0 0}.lang{min-width:36px}[dir="rtl"] body{font-family:Tahoma,"Segoe UI",Arial,sans-serif}[dir="rtl"] .label,[dir="rtl"] .client-filters,[dir="rtl"] .detail-content,[dir="rtl"] .detail-cover-copy{text-align:right}[dir="rtl"] .contact-form label{text-align:right}[dir="rtl"] input[type="email"],[dir="rtl"] input[type="tel"]{direction:ltr;text-align:left}[dir="rtl"] .detail-close{left:20px;right:auto}[dir="rtl"] .brand-arrow{transform:scaleX(-1)}[dir="rtl"] .hero h1{line-height:1.35;letter-spacing:0}@media(max-width:600px){.friendship{align-items:flex-start;flex-direction:column}.lang{padding:7px 8px}.strategy-goal{padding:20px}}
+</style>
+<link rel="canonical" href="https://certusdz.com/en/"/>
+<link rel="alternate" hreflang="ru" href="https://certusdz.com/ru/"/>
+<link rel="alternate" hreflang="en" href="https://certusdz.com/en/"/>
+<link rel="alternate" hreflang="fr" href="https://certusdz.com/fr/"/>
+<link rel="alternate" hreflang="ar" href="https://certusdz.com/ar/"/>
+<link rel="alternate" hreflang="x-default" href="https://certusdz.com/"/>
+<meta property="og:type" content="website"/><meta property="og:title" content="CERTUS GROUP | Industrial construction in Algeria"/><meta property="og:description" content="CERTUS GROUP — industrial construction, engineering and digital project management in Algeria and Africa. ETALON Group’s experience in Russia."/><meta property="og:url" content="https://certusdz.com/en/"/><meta property="og:image" content="https://certusdz.com/assets/volkovsky-3.jpg"/><meta name="robots" content="index,follow"/>
+</head>
+<body>
+<div class="noise"></div>
+<header class="site-header" id="top">
+<div class="container header-inner">
+<a aria-label="CERTUS GROUP" class="brand" href="#top">
+<img alt="CERTUS GROUP" src="/assets/e458bb6f1279388a19.svg"/>
+<span>
+<strong>CERTUS</strong>
+<small>GROUP • ALGERIA</small>
+</span>
+</a>
+<nav class="nav" id="nav">
+<a data-t="nav_about" href="#about">Approach</a>
+<a data-t="nav_intelligence" href="#intelligence">Construction Intelligence</a>
+<a data-t="nav_services" href="#services">Capabilities</a>
+<a data-t="nav_process" href="#process">Method</a>
+<a data-hub-t="nav_projects" href="#clients">Completed works</a>
+<a data-t="nav_contact" href="#contact">Contact</a>
+</nav>
+<div class="header-tools">
+<div aria-label="Язык сайта" class="langs" role="group">
+<button class="lang is-active" data-lang="ru">RU</button>
+<button class="lang" data-lang="en">EN</button>
+<button class="lang" data-lang="fr">FR</button>
+<button class="lang" data-lang="ar" lang="ar" aria-label="العربية">عربي</button>
+</div>
+<a class="header-cta" data-t="header_cta" href="#contact">Discuss a project</a>
+<button aria-label="Открыть меню" class="menu-toggle" id="menuToggle"><span></span><span></span></button>
+</div>
+</div>
+</header>
+<main>
+<section class="hero">
+<div class="hero-media">
+<img alt="CERTUS GROUP mega project hero image" src="/assets/ff515a87f71cda91e6.webp"/>
+<div class="hero-shade"></div>
+</div>
+<div class="container hero-grid">
+<div class="hero-copy reveal">
+<div class="kicker"><span></span><b data-t="hero_kicker">ALGERIA / AFRICA / COMPLEX PROJECTS</b></div>
+<h1 data-html-t="hero_title">Engineer the scale.<br><em>Control the outcome.</em></h1>
+<p class="hero-lead" data-t="hero_desc">CERTUS GROUP unites engineering, industrial construction and intelligent project control. Algeria is our starting point. Africa is our strategic horizon.</p>
+<div class="hero-partner-proof"><span class="hero-proof-dot"></span><span data-hub-t="hero_partner">CERTUS GROUP — the Algeria-based subsidiary of ETALON</span><a aria-label="Смотреть портфолио компаний" href="#clients">↗</a></div>
+<div class="hero-actions">
+<a class="btn btn-gold" data-t="hero_cta1" href="#contact">Start a conversation</a>
+<a class="btn btn-dark" data-t="hero_cta2" href="#intelligence">Explore intelligence</a>
+</div>
+<div class="hero-points">
+<div><strong>72h</strong><span data-t="hero_stat1">rapid project diagnosis</span></div>
+<div><strong>EPC+</strong><span data-t="hero_stat2">engineering, construction, control</span></div>
+<div><strong>1</strong><span data-t="hero_stat3">single version of the truth</span></div>
+</div>
+</div>
+<div class="hero-side reveal delay-1">
+<div class="hero-card glass">
+<div class="hero-card-top"><span data-t="hero_card_label">CORE SYSTEM</span><b>CERTUS / CI</b></div>
+<h3 data-t="hero_card_title">Construction Intelligence</h3>
+<p data-t="hero_card_desc">Schedule, facts, field photos, documentation, risks, money, owners and the critical path — in one management loop.</p>
+<ul>
+<li data-t="hero_card_li1">Early visibility of deviations</li>
+<li data-t="hero_card_li2">Decision with owner and deadline</li>
+<li data-t="hero_card_li3">Clear picture for the client</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="group-title" class="structure-v4" id="group">
+<div class="container structure-inner">
+<div class="structure-intro">
+<div class="struct-eyebrow" data-hub-t="hierarchy_kicker">RUSSIAN EXPERIENCE. ALGERIAN PRESENCE.</div>
+<h2 data-hub-html="hierarchy_title" id="group-title">ETALON’s industrial track record.<br><em>CERTUS in Africa.</em></h2>
+<p data-hub-t="hierarchy_intro">Industrial projects of ETALON Group and its subsidiaries in Russia. CERTUS GROUP is the Algeria-based subsidiary developing this expertise across African markets.</p>
+</div>
+<div aria-label="Структура компаний" class="brand-route">
+<div class="friendship"><div class="friendship-flags"><svg viewBox="0 0 60 40" role="img" aria-label="Россия"><path fill="#fff" d="M0 0h60v40H0z"/><path fill="#0039a6" d="M0 13.33h60v13.34H0z"/><path fill="#d52b1e" d="M0 26.67h60V40H0z"/></svg><span aria-hidden="true">↔</span><svg viewBox="0 0 60 40" role="img" aria-label="Алжир"><path fill="#fff" d="M0 0h60v40H0z"/><path fill="#006233" d="M0 0h30v40H0z"/><defs><mask id="crescent-cut"><rect width="60" height="40" fill="white"/><circle fill="black" cx="34" cy="17.5" r="9"/></mask></defs><circle fill="#d21034" cx="31" cy="20" r="11" mask="url(#crescent-cut)"/><path fill="#d21034" d="m38 13 1.9 4.5 4.8.4-3.7 3.1 1.1 4.7-4.1-2.5-4.1 2.5 1.1-4.7-3.7-3.1 4.8-.4z"/></svg></div><p data-t="friendship">Russia and Algeria — partnership, trust and shared construction expertise.</p></div><article class="brand-node etalon-node"><span data-hub-t="hier_etalon_label">RUSSIA • DELIVERED WORKS</span><strong data-brand-name>ETALON</strong><p data-hub-t="hier_etalon_body">Real project sites, executed works and customers in Russia.</p></article>
+<div aria-hidden="true" class="brand-arrow"><span>↳</span><span data-hub-t="hier_arrow">SUBSIDIARY</span></div>
+<article class="brand-node certus-node"><span data-hub-t="hier_certus_label">ALGERIA • SUBSIDIARY</span><strong>CERTUS GROUP</strong><p data-hub-t="hier_certus_body">Engineering, construction and Construction Intelligence for Algeria and Africa.</p></article>
+</div>
+</div>
+</section>
+<!-- References: historical project experience of the Russian partner ETALON, not CERTUS SARL contracts -->
+<section class="impact-bar">
+<div class="container impact-grid">
+<div class="impact-item reveal"><span>01</span><h3 data-t="impact1_t">Complexity is our product</h3><p data-t="impact1_d">We do not sell isolated work packages. We take control of the project.</p></div>
+<div class="impact-item reveal delay-1"><span>02</span><h3 data-t="impact2_t">Construction intelligence</h3><p data-t="impact2_d">We connect site reality and data into a management system.</p></div>
+<div class="impact-item reveal delay-2"><span>03</span><h3 data-t="impact3_t">North Africa Base</h3><p data-t="impact3_d">A local base in Algeria for complex projects and international partners.</p></div>
+</div>
+</section>
+<section class="about section" id="mission" aria-labelledby="mission-title">
+<div class="container split-grid">
+<div class="section-head reveal"><p class="label">CERTUS / MISSION</p><h2 id="mission-title" data-t="mission_title">Our mission</h2></div>
+<div class="reveal delay-1"><p data-t="mission_p1">We create a global benchmark for digital industrial construction by bringing together engineering expertise, a strong team, modern technology, data and artificial intelligence.</p><p data-t="mission_p2">We take responsibility for complex industrial facilities from concept to commissioning, delivering predictable outcomes in schedule, cost, quality and safety.</p><p data-t="mission_p3">We create an environment where people can grow, advance industry in Algeria and across Africa, and build facilities, systems and a company that will become a legacy for future generations.</p></div>
+<div class="strategy-goal"><p class="label" data-t="strategy_label">STRATEGIC GOAL</p><h3 data-t="strategy_goal">To become the world’s strongest digital company in industrial construction.</h3></div></div>
+</section>
+<section class="about section" id="about">
+<div class="container split-grid">
+<div class="section-head reveal">
+<p class="label">01 / <span data-t="about_label">APPROACH</span></p>
+<h2 data-html-t="about_title">We do not only manage construction.<br><em>We manage predictability.</em></h2>
+</div>
+<div class="about-body reveal delay-1">
+<p data-t="about_p1">For the client, the key question is not the report itself but what is happening on site now, where the risk is and what must be done next. CERTUS GROUP builds a system in which every critical issue has an owner, a deadline and an action.</p>
+<p data-t="about_p2">Field execution, engineering, schedule, budget and risk must speak one language. Construction Intelligence connects reality on site with management decisions.</p>
+<div class="metric-panel glass">
+<div><strong data-t="metric1_n">ONE</strong><span data-t="metric1_t">one source of truth for the client</span></div>
+<div><strong data-t="metric2_n">FAST</strong><span data-t="metric2_t">fast mobilization of decisions</span></div>
+<div><strong data-t="metric3_n">CLEAR</strong><span data-t="metric3_t">clear ownership for each risk</span></div>
+</div>
+</div>
+</div>
+</section>
+<section class="intelligence section dark" id="intelligence">
+<div class="container intelligence-grid">
+<div class="intelligence-copy reveal">
+<p class="label light">02 / <span data-t="intel_label">CONSTRUCTION INTELLIGENCE</span></p>
+<h2 data-html-t="intel_title">Data should not sit in folders.<br><em>It should drive the project.</em></h2>
+<p data-t="intel_p1">We connect schedule, field photos, production fact, documentation, risks, procurement and management decisions into one digital control loop. AI and analytics are not a showpiece — they are tools to detect deviations earlier.</p>
+<div class="intel-bullets">
+<div class="glass"><b data-t="intel_b1_t">72 hours</b><span data-t="intel_b1_d">fast reading of the project and its real management picture</span></div>
+<div class="glass"><b data-t="intel_b2_t">Control Room</b><span data-t="intel_b2_d">project war room with visibility of schedule, budget and critical nodes</span></div>
+<div class="glass"><b data-t="intel_b3_t">Decision Loop</b><span data-t="intel_b3_d">every deviation becomes an action with an owner and a deadline</span></div>
+</div>
+</div>
+<div class="intelligence-visual reveal delay-1">
+<img alt="Construction intelligence command center" src="/assets/9b0408cb31b8b1595a.webp"/>
+<div class="floating-ui card-a glass">
+<span data-t="ui1_top">ILLUSTRATIVE INTERFACE</span>
+<strong>72% / 85% / 68%</strong>
+<small data-t="ui1_bottom">schedule • structure • MEP</small>
+</div>
+<div class="floating-ui card-b glass">
+<span data-t="ui2_top">ACTION OWNER</span>
+<strong data-t="ui2_mid">Deviation → decision</strong>
+<small data-t="ui2_bottom">owner • deadline • proof</small>
+</div>
+</div>
+</div>
+</section>
+<section class="services section" id="services">
+<div class="container">
+<div class="section-top reveal">
+<div>
+<p class="label">03 / <span data-t="services_label">CAPABILITIES</span></p>
+<h2 data-html-t="services_title">Not a list of services.<br><em>A system for complex project delivery.</em></h2>
+</div>
+<p class="top-side" data-t="services_intro">From engineering and project structuring to execution, digital control and turnaround management.</p>
+</div>
+<div class="service-grid">
+<article class="service-card reveal"><span>01</span><h3 data-t="srv1_t">Industrial Construction</h3><p data-t="srv1_d">Civil works, concrete, steel, contractor coordination, production discipline and quality.</p></article>
+<article class="service-card reveal delay-1"><span>02</span><h3 data-t="srv2_t">Engineering &amp; Preparation</h3><p data-t="srv2_d">Technical studies, structural solutions, execution roadmap and engineering coordination.</p></article>
+<article class="service-card reveal delay-2"><span>03</span><h3 data-t="srv3_t">Project Management</h3><p data-t="srv3_d">Planning, budget, risk register, documentation, interface control and management rhythm.</p></article>
+<article class="service-card reveal"><span>04</span><h3 data-t="srv4_t">Construction Intelligence</h3><p data-t="srv4_d">Dashboards, plan-vs-fact, field photos, deviation analytics, digital project control room and AI-assisted review.</p></article>
+<article class="service-card reveal delay-1"><span>05</span><h3 data-t="srv5_t">Turnaround Management</h3><p data-t="srv5_d">Intervention on troubled projects to restore control, predictability and decision discipline.</p></article>
+<article class="service-card reveal delay-2"><span>06</span><h3 data-t="srv6_t">Africa Delivery Platform</h3><p data-t="srv6_d">Local coordination, international partnerships and a project delivery platform for Algeria and Africa.</p></article>
+</div>
+</div>
+</section>
+<section class="process section" id="process">
+<div class="container">
+<div class="section-top reveal">
+<div>
+<p class="label">04 / <span data-t="process_label">METHOD</span></p>
+<h2 data-html-t="process_title">From chaos to system.<br><em>From system to result.</em></h2>
+</div>
+<p class="top-side" data-t="process_intro">This is how we build the project control loop: understand fast, structure management, connect production and create transparency for the client.</p>
+</div>
+<div class="timeline">
+<div class="step reveal"><b>01</b><h3 data-t="step1_t">Read the project</h3><p data-t="step1_d">Within 72 hours we build a picture of schedule, volumes, money, documentation, risks and critical path.</p></div>
+<div class="step reveal delay-1"><b>02</b><h3 data-t="step2_t">Design the system</h3><p data-t="step2_d">We assign roles, meeting rhythm, control points, data structure and reporting logic.</p></div>
+<div class="step reveal delay-2"><b>03</b><h3 data-t="step3_t">Execute with discipline</h3><p data-t="step3_d">We connect the site, contractors and documents with the plan and resources.</p></div>
+<div class="step reveal"><b>04</b><h3 data-t="step4_t">See deviations early</h3><p data-t="step4_d">Deviations are visible before the critical point and turned into concrete actions.</p></div>
+<div class="step reveal delay-1"><b>05</b><h3 data-t="step5_t">Give certainty</h3><p data-t="step5_d">The client gets clarity and decisions instead of disconnected reports.</p></div>
+</div>
+</div>
+</section>
+<section class="gallery section" id="gallery">
+<div class="container">
+<div class="section-top reveal">
+<div>
+<p class="label">05 / <span data-t="gallery_label">SECTORS</span></p>
+<h2 data-html-t="gallery_title">Big challenges.<br><em>A systematic approach.</em></h2>
+</div>
+<p class="top-side" data-t="gallery_intro">From industrial assets and complex installation works to urban infrastructure. Scale demands precision in execution and transparency in management.</p>
+</div>
+<div class="gallery-grid">
+<figure class="gallery-card large reveal">
+<img alt="Industrial energy project" loading="lazy" src="/assets/963782b94ba6a72c45.webp"/>
+<figcaption><span data-t="gal1_k">INDUSTRY / ENERGY</span><b data-t="gal1_t">Team on a complex industrial asset</b></figcaption>
+</figure>
+<figure class="gallery-card reveal delay-1">
+<img alt="Infrastructure bridge project" loading="lazy" src="/assets/ddb723e0ecad18c6f2.webp"/>
+<figcaption><span data-t="gal2_k">INFRASTRUCTURE</span><b data-t="gal2_t">Precision of heavy infrastructure</b></figcaption>
+</figure>
+<figure class="gallery-card reveal delay-2">
+<img alt="Construction photography" loading="lazy" src="/assets/7d21e3c764ec972566.webp"/>
+<figcaption><span data-t="gal3_k">CONSTRUCTION</span><b data-t="gal3_t">Real field execution and site discipline</b></figcaption>
+</figure>
+<figure class="gallery-card reveal">
+<img alt="Steel structure works" loading="lazy" src="/assets/f8b3b0737aaec45dc5.webp"/>
+<figcaption><span data-t="gal4_k">STRUCTURE</span><b data-t="gal4_t">Steel, concrete, coordination and production control</b></figcaption>
+</figure>
+</div>
+<p class="gallery-disclaimer" data-t="gallery_disclaimer">Industrial construction, engineering and project management experience.</p>
+</div>
+</section>
+<section aria-labelledby="clients-title" class="clients-v4 section" id="clients">
+<div class="container">
+<div class="client-head">
+<div class="client-head-copy">
+<div class="client-eyebrow" data-hub-t="clients_kicker">PROJECT EXPERIENCE • ETALON / RUSSIA</div>
+<h2 data-hub-html="clients_title" id="clients-title">Russian clients.<br><em>Project experience.</em></h2>
+<p data-hub-t="clients_intro">Projects from ETALON Group’s portfolio. Select a client for sites, works and photos.</p>
+</div>
+<div class="client-statrow"><div><b id="clientCount">19</b><span data-hub-t="count_customers">CLIENTS / SITES</span></div><div><b id="projectCount">22</b><span data-hub-t="count_objects">PROJECTS IN PORTFOLIO</span></div></div>
+</div>
+<div class="client-filters">
+<div class="client-search"><label class="sr-only" data-hub-t="search_label" for="clientSearch">Search clients and projects</label><span aria-hidden="true">⌕</span><input autocomplete="off" data-hub-placeholder="Find a client or facility" id="clientSearch" placeholder="Find a client or facility" type="search"/></div>
+</div>
+<div class="client-list-heading"><span data-hub-t="list_all" id="clientListTitle">ETALON • PROJECTS IN RUSSIA</span><span aria-live="polite" id="listCount"></span></div>
+<div class="client-grid" id="clientGrid"><details class="client-static-tile"><summary><strong>ВСМПО-АВИСМА</strong><span>Титановая промышленность · Верхняя Салда</span></summary><article class="static-project"><h3>Промышленные объекты корпорации</h3><p>Верхняя Салда, Россия</p><p>с 2008 г.</p><p>Устройство монолитных железобетонных фундаментов; монтаж металлоконструкций и оборудования; устройство упрочнённых и наливных промышленных полов; общестроительные работы.</p></article><article class="static-project"><h3>Производственный комплекс мехобработки дисков и колёс</h3><p>Верхняя Салда, Россия</p><p>2019–2020</p><p>Производственный комплекс площадью 12 000 м².</p></article></details><details class="client-static-tile"><summary><strong>Ural Boeing Manufacturing</strong><span>ОЭЗ «Титановая долина» · производственная площадка</span></summary><article class="static-project"><h3>Производственная площадка «Титановой долины»</h3><p>Верхняя Салда, Россия</p><p>2017</p><p>Устройство упрочнённых бетонных полов, полимерное покрытие фундаментов и благоустройство территории.</p></article></details><details class="client-static-tile"><summary><strong>Газпромнефть-Терминал</strong><span>Нефтяная инфраструктура · Нижний Тагил</span></summary><article class="static-project"><h3>Очистные сооружения Нижнетагильской нефтебазы</h3><p>Нижний Тагил, Россия</p><p>2019–2020</p><p>Строительство комплекса производственных очистных сооружений на нефтебазе.</p></article></details><details class="client-static-tile"><summary><strong>SFT Group / Алексинская БКФ</strong><span>Целлюлозно-бумажная промышленность · Алексин</span></summary><article class="static-project"><h3>Комплекс очистных сооружений Алексинской БКФ</h3><p>Алексин, Россия</p><p>2021–2022</p><p>Строительство комплекса очистных сооружений, гидротехнический бетон и подземные технологические коммуникации.</p></article></details><details class="client-static-tile"><summary><strong>МУП УКС / ГУДСР / МостСтройПроект</strong><span>Транспортная инфраструктура · Екатеринбург</span></summary><article class="static-project"><h3>Реконструкция Макаровского моста</h3><p>Екатеринбург, Россия</p><p>2017</p><p>Ремонт бетонных конструкций, торкретирование, земляные работы, устройство железобетонных ростверков, стоек, ригелей, подферменных площадок и арок, гидроизоляция.</p></article></details><details class="client-static-tile"><summary><strong>ЮгПромСтрой</strong><span>Складской комплекс «Ролей», класс А</span></summary><article class="static-project"><h3>Складской комплекс «Ролей» класса А</h3><p>Екатеринбург, Россия</p><p>2017</p><p>Водоотведение речного русла с новым бетонным лотком, гидроизоляция, подпорные стенки, бетонные полы с топпингом в холодильных и складских зонах.</p></article></details><details class="client-static-tile"><summary><strong>Уральский завод ТСО</strong><span>Производство и логистика · Екатеринбург</span></summary><article class="static-project"><h3>Производственно-складской объект УЗТСО</h3><p>Екатеринбург, Россия</p><p>2017–2018</p><p>Полимерные наливные полы, бетонные полы с топпингом, строительство производственного склада, благоустройство и общестроительные работы.</p></article></details><details class="client-static-tile"><summary><strong>Святогор</strong><span>Промышленная площадка · Красноуральск</span></summary><article class="static-project"><h3>Работы на производственной площадке «Святогор»</h3><p>Красноуральск, Россия</p><p>2014</p><p>Монолитные железобетонные фундаменты, монтаж металлоконструкций и общестроительные работы. Изображение в карточке — графическая заставка, не фотография объекта.</p></article></details><details class="client-static-tile"><summary><strong>Вагоноремонтное предприятие Завязовское</strong><span>Железнодорожная промышленность · Нижний Тагил</span></summary><article class="static-project"><h3>Производственные работы вагоноремонтного предприятия</h3><p>Нижний Тагил, Россия</p><p>2015–2016</p><p>Железобетонные фундаменты, монтаж металлоконструкций, упрочнённые и наливные полы, общестроительные работы.</p></article></details><details class="client-static-tile"><summary><strong>Молочная благодать</strong><span>Пищевая промышленность · Кушва</span></summary><article class="static-project"><h3>Ремонт кровель и бетонных конструкций</h3><p>Кушва, Россия</p><p>2017</p><p>Устройство мягкой кровли, ремонт бетонных конструкций и торцов парапетов, изготовление и монтаж нащельников и козырьков.</p></article></details><details class="client-static-tile"><summary><strong>КОМОС ГРУПП</strong><span>Агропромышленный холдинг · Ижевск</span></summary><article class="static-project"><h3>Производственные работы агропромышленного холдинга</h3><p>Ижевск, Россия</p><p>2016</p><p>Монтаж металлоконструкций, устройство фундаментов, промышленные полы, электромонтажные работы.</p></article></details><details class="client-static-tile"><summary><strong>ПЦБК</strong><span>Целлюлозно-бумажное производство · Пермь</span></summary><article class="static-project"><h3>Реконструкция кровли производственного объекта</h3><p>Пермь, Россия</p><p>2018–2019</p><p>Реконструкция кровельного покрытия производственного объекта.</p></article></details><details class="client-static-tile"><summary><strong>Татнефть</strong><span>Нефтепереработка · два технологических объекта</span></summary><article class="static-project"><h3>Установка гидроочистки тяжёлого газойля коксования</h3><p>Россия</p><p>—</p><p>Реализованный объект компании «ЭТАЛОН».</p></article><article class="static-project"><h3>Комбинированная установка изомеризации лёгкой нафты и секция сплиттера</h3><p>Россия</p><p>—</p><p>Реализованный объект компании «ЭТАЛОН».</p></article></details><details class="client-static-tile"><summary><strong>Роспан Интернешнл</strong><span>Газовая отрасль · Восточный Уренгой</span></summary><article class="static-project"><h3>Объекты подготовки газа и газового конденсата</h3><p>Восточно-Уренгойский лицензионный участок, Россия</p><p>—</p><p>Реализованный объект компании «ЭТАЛОН».</p></article></details><details class="client-static-tile"><summary><strong>НК Роснефть</strong><span>Нефтепереработка · Новокуйбышевск</span></summary><article class="static-project"><h3>Комплекс гидрокрекинга — комбинированная установка Новокуйбышевского НПЗ</h3><p>Новокуйбышевск, Россия</p><p>—</p><p>Реализованный объект компании «ЭТАЛОН».</p></article></details><details class="client-static-tile"><summary><strong>Башнефть</strong><span>Нефтехимия · УНПЗ и Уфанефтехим</span></summary><article class="static-project"><h3>Строительство резервной технологической линии УПЭС</h3><p>Башнефть-УНПЗ, Россия</p><p>—</p><p>Реализованный объект компании «ЭТАЛОН».</p></article><article class="static-project"><h3>Промышленный объект Башнефть-Уфанефтехим</h3><p>Уфа, Россия</p><p>—</p><p>Реализованный объект компании «ЭТАЛОН».</p></article></details><details class="client-static-tile"><summary><strong>Омский каучук</strong><span>Нефтехимия · фенол и ацетон</span></summary><article class="static-project"><h3>Техническое перевооружение производства фенола и ацетона (цеха 101–105)</h3><p>Омск, Россия</p><p>—</p><p>Реализованный объект компании «ЭТАЛОН».</p></article></details><details class="client-static-tile"><summary><strong>Жилое строительство — Стерлитамак</strong><span>Жилищное строительство · Башкортостан</span></summary><article class="static-project"><h3>Многоквартирный жилой дом</h3><p>Стерлитамак, Россия</p><p>—</p><p>Реализованный объект компании «ЭТАЛОН».</p></article></details></div>
+<p class="clients-empty" data-hub-t="no_results" hidden="" id="clientsEmpty">Nothing matched. Try a different query or filter.</p>
+
+</div>
+</section>
+<div class="detail-shade" hidden="" id="detailShade"></div>
+<section aria-labelledby="detailTitle" aria-modal="true" class="client-detail" hidden="" id="clientDetail" role="dialog">
+<div class="detail-shell">
+<div class="detail-bar"><a class="detail-back" data-hub-t="back" href="#clients" id="detailBack">← All clients</a><span class="detail-bar-logo">CERTUS <i>/ PORTFOLIO</i></span><button aria-label="Закрыть" id="detailClose" type="button">×</button></div>
+<div class="detail-body" id="detailBody"></div>
+</div>
+</section>
+<section class="cta section dark">
+<div class="container cta-grid">
+<div class="reveal">
+<p class="label light">06 / <span data-t="cta_label">VALUE FOR THE CLIENT</span></p>
+<h2 data-html-t="cta_title">Complex projects demand<br><em>clarity of decisions.</em></h2>
+</div>
+<div class="cta-points reveal delay-1">
+<div class="glass"><strong data-t="cta1_t">One accountable system</strong><p data-t="cta1_d">Engineering, execution and project control in one decision architecture.</p></div>
+<div class="glass"><strong data-t="cta2_t">See deviations earlier</strong><p data-t="cta2_d">Photos, schedules, documents and site reality are connected rather than scattered across folders.</p></div>
+<div class="glass"><strong data-t="cta3_t">A forecast, not a beautiful report</strong><p data-t="cta3_d">The client sees what is evidenced, what needs a decision and what action follows.</p></div>
+</div>
+</div>
+</section>
+<section class="contact section" id="contact">
+<div class="container contact-grid">
+<div class="reveal">
+<p class="label">07 / <span data-t="contact_label">CONTACT</span></p>
+<h2 data-html-t="contact_title">If the project is complex —<br><em>we should talk.</em></h2>
+<p data-t="contact_intro">Complete the form to send your inquiry to info@certusdz.com. We will reply to the email address you provide.</p>
+<div class="contact-details" style="margin-top:28px;display:grid;gap:14px">
+<a href="mailto:info@certusdz.com" style="font-size:clamp(18px,2vw,25px);font-weight:600">info@certusdz.com</a>
+<a href="tel:+213551970323" style="font-size:clamp(18px,2vw,25px);font-weight:600">+213 551 970 323</a>
+</div>
+</div>
+<form class="contact-form reveal delay-1" id="briefForm" action="https://formsubmit.co/info@certusdz.com" method="POST">
+<input type="hidden" name="_subject" value="CERTUS — обращение с сайта certusdz.com"/>
+<input type="hidden" name="_template" value="table"/>
+<input type="hidden" name="_next" value="https://certusdz.com/?sent=1#contact"/>
+<input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true"/>
+<label><span data-t="form_name">Name</span><input name="name" required=""/></label>
+<label><span data-t="form_company">Company</span><input name="company"/></label>
+<label><span data-t="form_email">E-mail</span><input name="email" required="" type="email"/></label>
+<label><span data-t="form_phone">Phone number</span><input name="phone" type="tel" autocomplete="tel" required maxlength="40" dir="ltr"/></label>
+<label><span data-t="form_region">Country / region</span><input name="region"/></label>
+<label><span data-t="form_type">Project type</span>
+<select name="type">
+<option data-t="opt1">Industrial construction</option>
+<option data-t="opt2">Engineering</option>
+<option data-t="opt3">Construction intelligence</option>
+<option data-t="opt4">Turnaround management</option>
+<option data-t="opt5">Other</option>
+</select>
+</label>
+<label class="full"><span data-t="form_desc">Project summary</span><textarea data-placeholder-t="form_placeholder" name="task" placeholder="Context, objective, timing, constraints, what you expect from us" required="" rows="5"></textarea></label>
+<div class="form-actions">
+<button class="btn btn-gold" data-t="form_send" type="submit">Send inquiry</button>
+<button class="btn btn-dark" data-t="form_download" id="downloadBrief" type="button">Download inquiry details</button>
+</div>
+<p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+<p class="form-status"><span data-t="form_delivery">Inquiry delivery via</span> <a href="https://formsubmit.co/" target="_blank" rel="noopener noreferrer">FormSubmit</a>.</p>
+</form>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-inner">
+<div>
+<strong>CERTUS GROUP</strong>
+<p data-t="footer_text">Industrial Construction • Construction Intelligence • Algeria / Africa</p>
+</div>
+<a data-t="footer_back" href="#top">Back to top ↑</a>
+</div>
+</footer>
+<script>(() => {
+  const translations = {
+    ru: {
+      nav_about:'Подход', nav_intelligence:'Строительный интеллект', nav_services:'Компетенции', nav_process:'Метод', nav_gallery:'Проекты', nav_contact:'Контакт',
+      header_cta:'Обсудить проект',
+      hero_kicker:'ALGERIA / AFRICA / COMPLEX PROJECTS',
+      hero_title:'Сайт, после которого<br><em>хотят работать с нами.</em>',
+      hero_desc:'CERTUS GROUP соединяет реальное промышленное строительство, инженерную дисциплину и строительный интеллект в единую систему ответственности за результат.',
+      hero_cta1:'Запустить диалог', hero_cta2:'Смотреть интеллект', hero_stat1:'входная диагностика объекта', hero_stat2:'инженерия, строительство, контроль', hero_stat3:'единая версия факта',
+      hero_card_label:'CORE SYSTEM', hero_card_title:'Construction Intelligence', hero_card_desc:'План, факт, фото, ПТО, риски, деньги, ответственные и критический путь — в одном управленческом контуре.',
+      hero_card_li1:'Раннее выявление отклонений', hero_card_li2:'Решение с владельцем и сроком', hero_card_li3:'Прозрачная картина для заказчика',
+      impact1_t:'Сложность — наш продукт', impact1_d:'Не продаём отдельный участок. Берём объект в управление.',
+      impact2_t:'Строительный интеллект', impact2_d:'Связываем стройку и данные в систему управленческих решений.',
+      impact3_t:'North Africa Base', impact3_d:'Локальная опора в Алжире для сложных проектов и международных партнёров.',
+      about_label:'ПОДХОД', about_title:'Мы управляем не только строительством.<br><em>Мы управляем предсказуемостью.</em>',
+      about_p1:'Для заказчика важен не отчёт сам по себе, а ответ на главный вопрос: что происходит на объекте сейчас, где риск и что нужно сделать дальше. CERTUS GROUP строит систему, в которой у каждого критического вопроса есть владелец, срок и действие.',
+      about_p2:'Основа сайта — материалы бренда «Эталон», архитектура международного позиционирования CERTUS и отдельный модуль «Строительный интеллект» как точка сильного отличия.',
+      metric1_n:'ONE', metric1_t:'одна версия факта для заказчика', metric2_n:'FAST', metric2_t:'быстрая мобилизация решений', metric3_n:'CLEAR', metric3_t:'ясная ответственность по каждому риску',
+      intel_label:'СТРОИТЕЛЬНЫЙ ИНТЕЛЛЕКТ', intel_title:'Данные не должны лежать в папках.<br><em>Они должны управлять стройкой.</em>',
+      intel_p1:'Мы собираем график, фотофиксацию, производственный факт, ПТО, риски, снабжение и управленческие решения в единый цифровой контур. AI и аналитика — не шоу, а инструмент для более раннего обнаружения отклонений.',
+      intel_b1_t:'72 часа', intel_b1_d:'быстрое чтение объекта и реальной управленческой картины', intel_b2_t:'Control Room', intel_b2_d:'проектный штаб с видимостью срока, бюджета и критических узлов', intel_b3_t:'Decision Loop', intel_b3_d:'каждое отклонение переходит в действие, владельца и срок',
+      ui1_top:'REAL-TIME VIEW', ui1_bottom:'срок • конструктив • MEP', ui2_top:'ACTION OWNER', ui2_mid:'Отклонение → решение', ui2_bottom:'владелец • срок • подтверждение',
+      services_label:'КОМПЕТЕНЦИИ', services_title:'Не набор услуг.<br><em>Система выполнения сложного проекта.</em>', services_intro:'От инженерии и организационной структуры проекта до производства работ, цифрового контроля и антикризисного управления.',
+      srv1_t:'Промышленное строительство', srv1_d:'Общестрой, монолит, металл, координация подрядчиков, производственная дисциплина и качество исполнения.',
+      srv2_t:'Инженерия и подготовка', srv2_d:'Техническая проработка, конструктивные решения, дорожная карта реализации и инженерная координация.',
+      srv3_t:'Project Management', srv3_d:'Планирование, бюджет, реестр рисков, документооборот, контроль интерфейсов и управленческая ритмика.',
+      srv4_t:'Строительный интеллект', srv4_d:'Dashboard, plan-fact, фотофиксация, аналитика отклонений, цифровой проектный штаб и AI-assisted review.',
+      srv5_t:'Антикризисное управление', srv5_d:'Подключение к проблемному проекту, возврат контроля, восстановление прогнозируемости и дисциплины решений.',
+      srv6_t:'Africa Delivery Platform', srv6_d:'Локальная координация, международные партнёрства и развитие проектной платформы для Алжира и Африки.',
+      process_label:'МЕТОД', process_title:'От хаоса к системе.<br><em>От системы — к результату.</em>', process_intro:'Так мы выстраиваем контур проекта: быстро понимаем картину, структурируем управление, подключаем производство и создаём прозрачность для заказчика.',
+      step1_t:'Read the project', step1_d:'За 72 часа собираем картину: сроки, объёмы, деньги, документация, риски и критический путь.', step2_t:'Design the system', step2_d:'Назначаем роли, ритм совещаний, контрольные точки, структуру данных и отчётный контур.', step3_t:'Execute with discipline', step3_d:'Связываем стройплощадку, подрядчиков и документы с планом и ресурсами.', step4_t:'See deviations early', step4_d:'Отклонения видим до критической точки — и переводим их в конкретные действия.', step5_t:'Give certainty', step5_d:'Заказчик получает прозрачную картину и понятные решения вместо набора разрозненных отчётов.',
+      gallery_label:'ВИЗУАЛЬНЫЙ МИР', gallery_title:'Масштаб, интеллект и доверие.<br><em>Так должен ощущаться бренд.</em>', gallery_intro:'Ниже — визуальная система сайта: мегапроект, цифровой проектный штаб, индустриальный объект и инфраструктурный масштаб.',
+      gal1_k:'INDUSTRY / ENERGY', gal1_t:'Команда на сложном промышленном объекте', gal2_k:'INFRASTRUCTURE', gal2_t:'Точность тяжёлой инфраструктуры', gal3_k:'CONSTRUCTION', gal3_t:'Реальная площадка и дисциплина исполнения', gal4_k:'STRUCTURE', gal4_t:'Металл, бетон, координация и производственный контроль',
+      cta_label:'ПОЧЕМУ ЭТО РАБОТАЕТ', cta_title:'Заказчик открывает сайт и понимает:<br><em>с этими людьми можно строить серьёзно.</em>', cta1_t:'Премиальное первое впечатление', cta1_d:'Сайт не «про строительство вообще», а про серьёзный международный контур и управляемую сложность.', cta2_t:'Сильное отличие', cta2_d:'Блок «Строительный интеллект» делает бренд умнее и дороже в восприятии.', cta3_t:'Понятная ценность', cta3_d:'Заказчик сразу считывает, какую проблему мы решаем и почему это снижает риск проекта.',
+      contact_label:'КОНТАКТ', contact_title:'Если проект сложный —<br><em>нам есть о чём говорить.</em>', mission_title:'Наша миссия', mission_p1:'Мы создаём мировой эталон цифрового промышленного строительства, объединяя инженерную экспертизу, сильную команду, современные технологии, данные и искусственный интеллект.', mission_p2:'Мы берём ответственность за сложные промышленные объекты от замысла до ввода в эксплуатацию, обеспечивая заказчику предсказуемый результат по срокам, стоимости, качеству и безопасности.', mission_p3:'Мы создаём достойную среду для развития людей, развиваем промышленность Алжира и стран Африки и строим объекты, системы и компанию, которые станут наследием для будущих поколений.', contact_intro:'Заполните форму — обращение поступит на info@certusdz.com. Мы ответим на указанный вами e-mail.',
+      form_name:'Имя', form_company:'Компания', form_email:'E-mail', form_region:'Страна / регион', form_type:'Тип проекта', opt1:'Промышленное строительство', opt2:'Инжиниринг', opt3:'Строительный интеллект', opt4:'Антикризисное управление', opt5:'Другое', form_desc:'Кратко о задаче', form_placeholder:'Контекст, цель, сроки, ограничения, чего ждёте от нас', form_delivery:'Доставка обращения через', form_send:'Отправить обращение', form_download:'Скачать .txt',
+      footer_text:'Industrial Construction • Construction Intelligence • Algeria / Africa', footer_back:'Наверх ↑',
+      status_copied:'Текст обращения скопирован.', status_download:'Файл подготовлен для сохранения.', status_invalid:'Заполните обязательные поля.'
+    },
+    en: {
+      nav_about:'Approach', nav_intelligence:'Construction Intelligence', nav_services:'Capabilities', nav_process:'Method', nav_gallery:'Projects', nav_contact:'Contact',
+      header_cta:'Discuss a project', hero_kicker:'ALGERIA / AFRICA / COMPLEX PROJECTS', hero_title:'A website that makes clients<br><em>want to work with us.</em>', hero_desc:'CERTUS GROUP combines real industrial construction, engineering discipline and construction intelligence into one system of responsibility for the result.', hero_cta1:'Start a conversation', hero_cta2:'Explore intelligence', hero_stat1:'rapid project diagnosis', hero_stat2:'engineering, construction, control', hero_stat3:'single version of the truth', hero_card_label:'CORE SYSTEM', hero_card_title:'Construction Intelligence', hero_card_desc:'Schedule, facts, field photos, documentation, risks, money, owners and the critical path — in one management loop.', hero_card_li1:'Early visibility of deviations', hero_card_li2:'Decision with owner and deadline', hero_card_li3:'Clear picture for the client', impact1_t:'Complexity is our product', impact1_d:'We do not sell isolated work packages. We take control of the project.', impact2_t:'Construction intelligence', impact2_d:'We connect site reality and data into a management system.', impact3_t:'North Africa Base', impact3_d:'A local base in Algeria for complex projects and international partners.', about_label:'APPROACH', about_title:'We do not only manage construction.<br><em>We manage predictability.</em>', about_p1:'For the client, the key question is not the report itself but what is happening on site now, where the risk is and what must be done next. CERTUS GROUP builds a system in which every critical issue has an owner, a deadline and an action.', about_p2:'This site combines the strategic foundation of the ETALON brand, CERTUS international positioning and a dedicated Construction Intelligence module as a premium differentiator.', metric1_n:'ONE', metric1_t:'one source of truth for the client', metric2_n:'FAST', metric2_t:'fast mobilization of decisions', metric3_n:'CLEAR', metric3_t:'clear ownership for each risk', intel_label:'CONSTRUCTION INTELLIGENCE', intel_title:'Data should not sit in folders.<br><em>It should drive the project.</em>', intel_p1:'We connect schedule, field photos, production fact, documentation, risks, procurement and management decisions into one digital control loop. AI and analytics are not a showpiece — they are tools to detect deviations earlier.', intel_b1_t:'72 hours', intel_b1_d:'fast reading of the project and its real management picture', intel_b2_t:'Control Room', intel_b2_d:'project war room with visibility of schedule, budget and critical nodes', intel_b3_t:'Decision Loop', intel_b3_d:'every deviation becomes an action with an owner and a deadline', ui1_top:'REAL-TIME VIEW', ui1_bottom:'schedule • structure • MEP', ui2_top:'ACTION OWNER', ui2_mid:'Deviation → decision', ui2_bottom:'owner • deadline • proof', services_label:'CAPABILITIES', services_title:'Not a list of services.<br><em>A system for complex project delivery.</em>', services_intro:'From engineering and project structuring to execution, digital control and turnaround management.', srv1_t:'Industrial Construction', srv1_d:'Civil works, concrete, steel, contractor coordination, production discipline and quality.', srv2_t:'Engineering & Preparation', srv2_d:'Technical studies, structural solutions, execution roadmap and engineering coordination.', srv3_t:'Project Management', srv3_d:'Planning, budget, risk register, documentation, interface control and management rhythm.', srv4_t:'Construction Intelligence', srv4_d:'Dashboards, plan-vs-fact, field photos, deviation analytics, digital project control room and AI-assisted review.', srv5_t:'Turnaround Management', srv5_d:'Intervention on troubled projects to restore control, predictability and decision discipline.', srv6_t:'Africa Delivery Platform', srv6_d:'Local coordination, international partnerships and a project delivery platform for Algeria and Africa.', process_label:'METHOD', process_title:'From chaos to system.<br><em>From system to result.</em>', process_intro:'This is how we build the project control loop: understand fast, structure management, connect production and create transparency for the client.', step1_t:'Read the project', step1_d:'Within 72 hours we build a picture of schedule, volumes, money, documentation, risks and critical path.', step2_t:'Design the system', step2_d:'We assign roles, meeting rhythm, control points, data structure and reporting logic.', step3_t:'Execute with discipline', step3_d:'We connect the site, contractors and documents with the plan and resources.', step4_t:'See deviations early', step4_d:'Deviations are visible before the critical point and turned into concrete actions.', step5_t:'Give certainty', step5_d:'The client gets clarity and decisions instead of disconnected reports.', gallery_label:'VISUAL WORLD', gallery_title:'Scale, intelligence and trust.<br><em>This is how the brand should feel.</em>', gallery_intro:'Below is the visual language of the site: megaprojects, digital control room, industrial assets and infrastructure scale.', gal1_k:'INDUSTRY / ENERGY', gal1_t:'Team on a complex industrial asset', gal2_k:'INFRASTRUCTURE', gal2_t:'Precision of heavy infrastructure', gal3_k:'CONSTRUCTION', gal3_t:'Real field execution and site discipline', gal4_k:'STRUCTURE', gal4_t:'Steel, concrete, coordination and production control', cta_label:'WHY IT WORKS', cta_title:'The client opens the site and instantly feels:<br><em>these people can deliver serious work.</em>', cta1_t:'Premium first impression', cta1_d:'The site is not “construction in general”; it is about international-grade delivery and managed complexity.', cta2_t:'Strong differentiation', cta2_d:'The Construction Intelligence block makes the brand smarter and more valuable in perception.', cta3_t:'Clear value', cta3_d:'The client immediately understands what problem we solve and why this lowers project risk.', contact_label:'CONTACT', contact_title:'If the project is complex —<br><em>we should talk.</em>', mission_title:'Our mission', mission_p1:'We create a global benchmark for digital industrial construction by bringing together engineering expertise, a strong team, modern technology, data and artificial intelligence.', mission_p2:'We take responsibility for complex industrial facilities from concept to commissioning, delivering predictable outcomes in schedule, cost, quality and safety.', mission_p3:'We create an environment where people can grow, advance industry in Algeria and across Africa, and build facilities, systems and a company that will become a legacy for future generations.', contact_intro:'Complete the form to send your inquiry to info@certusdz.com. We will reply to the email address you provide.', form_name:'Name', form_company:'Company', form_email:'E-mail', form_region:'Country / region', form_type:'Project type', opt1:'Industrial construction', opt2:'Engineering', opt3:'Construction intelligence', opt4:'Turnaround management', opt5:'Other', form_desc:'Project summary', form_placeholder:'Context, objective, timing, constraints, what you expect from us', form_delivery:'Inquiry delivery via', form_send:'Send inquiry', form_download:'Download .txt', footer_text:'Industrial Construction • Construction Intelligence • Algeria / Africa', footer_back:'Back to top ↑', status_copied:'Inquiry text copied.', status_download:'The file is ready to save.', status_invalid:'Please fill in the required fields.'
+    },
+    fr: {
+      nav_about:'Approche', nav_intelligence:'Intelligence chantier', nav_services:'Compétences', nav_process:'Méthode', nav_gallery:'Projets', nav_contact:'Contact',
+      header_cta:'Discuter du projet', hero_kicker:'ALGÉRIE / AFRIQUE / PROJETS COMPLEXES', hero_title:'Un site qui donne envie<br><em>de travailler avec nous.</em>', hero_desc:'CERTUS GROUP réunit le vrai chantier industriel, la discipline d’ingénierie et l’intelligence chantier dans un seul système de responsabilité du résultat.', hero_cta1:'Lancer le dialogue', hero_cta2:'Voir l’intelligence', hero_stat1:'diagnostic rapide du projet', hero_stat2:'ingénierie, construction, contrôle', hero_stat3:'une seule version du fait', hero_card_label:'CORE SYSTEM', hero_card_title:'Construction Intelligence', hero_card_desc:'Planning, faits terrain, photos, documents, risques, coûts, responsables et chemin critique — dans une seule boucle de pilotage.', hero_card_li1:'Détection précoce des écarts', hero_card_li2:'Décision avec responsable et délai', hero_card_li3:'Vision claire pour le client', impact1_t:'La complexité est notre produit', impact1_d:'Nous ne vendons pas un lot isolé. Nous prenons l’objet en pilotage.', impact2_t:'Intelligence chantier', impact2_d:'Nous relions le terrain et les données dans un système de pilotage.', impact3_t:'Base Afrique du Nord', impact3_d:'Ancrage local en Algérie pour les projets complexes et les partenaires internationaux.', about_label:'APPROCHE', about_title:'Nous ne pilotons pas seulement la construction.<br><em>Nous pilotons la prévisibilité.</em>', about_p1:'Pour le client, la question principale n’est pas le rapport lui-même, mais ce qui se passe réellement sur le site, où se trouve le risque et ce qu’il faut faire ensuite. CERTUS GROUP construit un système où chaque question critique a un responsable, un délai et une action.', about_p2:'Ce site s’appuie sur les matériaux stratégiques du brand ETALON, sur le positionnement international de CERTUS et sur un module distinct “Construction Intelligence” comme différenciation premium.', metric1_n:'ONE', metric1_t:'une seule source de vérité pour le client', metric2_n:'FAST', metric2_t:'mobilisation rapide des décisions', metric3_n:'CLEAR', metric3_t:'responsabilité claire sur chaque risque', intel_label:'INTELLIGENCE CHANTIER', intel_title:'Les données ne doivent pas dormir dans des dossiers.<br><em>Elles doivent piloter le chantier.</em>', intel_p1:'Nous relions planning, photos terrain, production, documentation, risques, approvisionnement et décisions dans une seule boucle numérique de contrôle. L’IA et l’analytique ne sont pas un spectacle, mais un outil de détection plus précoce des écarts.', intel_b1_t:'72 heures', intel_b1_d:'lecture rapide du projet et de sa réalité managériale', intel_b2_t:'Control Room', intel_b2_d:'war room projet avec visibilité sur délais, budget et nœuds critiques', intel_b3_t:'Decision Loop', intel_b3_d:'chaque écart devient une action avec un responsable et une échéance', ui1_top:'REAL-TIME VIEW', ui1_bottom:'délais • structure • MEP', ui2_top:'ACTION OWNER', ui2_mid:'Écart → décision', ui2_bottom:'responsable • délai • preuve', services_label:'COMPÉTENCES', services_title:'Pas une simple liste de services.<br><em>Un système de livraison de projet complexe.</em>', services_intro:'De l’ingénierie et la structuration du projet à l’exécution, au contrôle digital et à la gestion de crise.', srv1_t:'Construction industrielle', srv1_d:'Gros œuvre, béton, charpente acier, coordination des entreprises, discipline de production et qualité.', srv2_t:'Ingénierie & préparation', srv2_d:'Études techniques, solutions structurelles, feuille de route d’exécution et coordination ingénierie.', srv3_t:'Project Management', srv3_d:'Planning, budget, registre des risques, documentation, interfaces et rythme de pilotage.', srv4_t:'Construction Intelligence', srv4_d:'Dashboards, plan/fact, photos terrain, analyse des écarts, war room digitale et revue assistée par IA.', srv5_t:'Gestion de crise projet', srv5_d:'Intervention sur projet en difficulté pour rétablir le contrôle, la prévisibilité et la discipline décisionnelle.', srv6_t:'Africa Delivery Platform', srv6_d:'Coordination locale, partenariats internationaux et plateforme de delivery pour l’Algérie et l’Afrique.', process_label:'MÉTHODE', process_title:'Du chaos au système.<br><em>Du système au résultat.</em>', process_intro:'Voici comment nous construisons la boucle de pilotage du projet : comprendre vite, structurer, connecter le terrain et créer de la transparence pour le client.', step1_t:'Lire le projet', step1_d:'En 72 heures, nous reconstituons délais, volumes, coûts, documents, risques et chemin critique.', step2_t:'Concevoir le système', step2_d:'Nous définissons les rôles, le rythme des réunions, les points de contrôle, la structure de données et le reporting.', step3_t:'Exécuter avec discipline', step3_d:'Nous relions le chantier, les entreprises et les documents au plan et aux ressources.', step4_t:'Voir les écarts tôt', step4_d:'Les écarts sont visibles avant le point critique et convertis en actions concrètes.', step5_t:'Donner de la certitude', step5_d:'Le client reçoit de la clarté et des décisions, pas des rapports disjoints.', gallery_label:'UNIVERS VISUEL', gallery_title:'Échelle, intelligence et confiance.<br><em>Voilà comment la marque doit se ressentir.</em>', gallery_intro:'Ci-dessous, le langage visuel du site : mégaprojet, war room digitale, actif industriel et échelle infrastructure.', gal1_k:'INDUSTRIE / ÉNERGIE', gal1_t:'Équipe sur un actif industriel complexe', gal2_k:'INFRASTRUCTURE', gal2_t:'Précision des infrastructures lourdes', gal3_k:'CONSTRUCTION', gal3_t:'Exécution réelle et discipline terrain', gal4_k:'STRUCTURE', gal4_t:'Acier, béton, coordination et contrôle de production', cta_label:'POURQUOI ÇA MARCHE', cta_title:'Le client ouvre le site et comprend aussitôt :<br><em>avec eux, on peut construire sérieusement.</em>', cta1_t:'Première impression premium', cta1_d:'Le site ne parle pas de “construction en général”, mais de delivery international et de complexité maîtrisée.', cta2_t:'Différenciation forte', cta2_d:'Le bloc Construction Intelligence rend la marque plus intelligente et plus précieuse dans la perception.', cta3_t:'Valeur claire', cta3_d:'Le client comprend immédiatement le problème que nous résolvons et pourquoi cela réduit le risque du projet.', contact_label:'CONTACT', contact_title:'Si le projet est complexe —<br><em>parlons-en.</em>', mission_title:'Notre mission', mission_p1:'Nous créons une référence mondiale de la construction industrielle numérique en réunissant expertise technique, équipe solide, technologies modernes, données et intelligence artificielle.', mission_p2:'Nous prenons la responsabilité des installations industrielles complexes, de la conception à la mise en service, pour garantir à nos clients un résultat prévisible en matière de délais, de coûts, de qualité et de sécurité.', mission_p3:'Nous créons un environnement propice au développement des personnes, développons l’industrie en Algérie et dans les pays africains, et bâtissons des ouvrages, des systèmes et une entreprise qui constitueront un héritage pour les générations futures.', contact_intro:'Remplissez le formulaire pour envoyer votre demande à info@certusdz.com. Nous répondrons à votre adresse e-mail.', form_name:'Nom', form_company:'Entreprise', form_email:'E-mail', form_region:'Pays / région', form_type:'Type de projet', opt1:'Construction industrielle', opt2:'Ingénierie', opt3:'Construction intelligence', opt4:'Gestion de crise projet', opt5:'Autre', form_desc:'Résumé du besoin', form_placeholder:'Contexte, objectif, délais, contraintes, ce que vous attendez de nous', form_delivery:'Envoi de la demande via', form_send:'Envoyer la demande', form_download:'Télécharger .txt', footer_text:'Industrial Construction • Construction Intelligence • Algeria / Africa', footer_back:'Haut de page ↑', status_copied:'Le texte de la demande a été copié.', status_download:'Le fichier est prêt à être enregistré.', status_invalid:'Veuillez remplir les champs obligatoires.'
+    }
+  };
+
+
+  const corrections = {"ru": {"nav_gallery": "Направления", "hero_title": "Создаём масштаб.<br><em>Управляем результатом.</em>", "hero_desc": "CERTUS GROUP — инженерия, промышленное строительство и интеллектуальное управление сложными проектами. Алжир — наша отправная точка. Африка — стратегический горизонт.", "about_p2": "Реальный строительный процесс, инженерные расчёты, график, бюджет и риски должны говорить на одном языке. Строительный интеллект соединяет факты на площадке с решениями руководителя.", "gallery_label": "НАПРАВЛЕНИЯ", "gallery_title": "Большие задачи.<br><em>Системный подход.</em>", "gallery_intro": "От инженерных систем и промышленного монтажа до городской инфраструктуры. Масштаб работ требует точности исполнения и прозрачности управления.", "cta_label": "ЦЕННОСТЬ ДЛЯ ЗАКАЗЧИКА", "cta_title": "В сложных проектах побеждает<br><em>ясность решений.</em>", "cta1_t": "Единая ответственность", "cta1_d": "Инженерия, выполнение работ и управленческий контроль в одной логике решений.", "cta2_t": "Отклонения видны раньше", "cta2_d": "Фотографии, график, документы и фактический ход работ связаны, а не хранятся в разных папках.", "cta3_t": "Прогноз, а не красивый отчёт", "cta3_d": "Заказчик видит, что подтверждено фактами, что требует решения и какое следующее действие.", "ui1_top": "ДЕМОНСТРАЦИОННЫЙ ИНТЕРФЕЙС", "ui1_mid": "ПЛАН / ФАКТ / РИСК", "gallery_disclaimer": "Наш опыт в промышленном строительстве, инженерии и управлении проектами."}, "en": {"nav_gallery": "Sectors", "hero_title": "Engineer the scale.<br><em>Control the outcome.</em>", "hero_desc": "CERTUS GROUP unites engineering, industrial construction and intelligent project control. Algeria is our starting point. Africa is our strategic horizon.", "about_p2": "Field execution, engineering, schedule, budget and risk must speak one language. Construction Intelligence connects reality on site with management decisions.", "gallery_label": "SECTORS", "gallery_title": "Big challenges.<br><em>A systematic approach.</em>", "gallery_intro": "From industrial assets and complex installation works to urban infrastructure. Scale demands precision in execution and transparency in management.", "cta_label": "VALUE FOR THE CLIENT", "cta_title": "Complex projects demand<br><em>clarity of decisions.</em>", "cta1_t": "One accountable system", "cta1_d": "Engineering, execution and project control in one decision architecture.", "cta2_t": "See deviations earlier", "cta2_d": "Photos, schedules, documents and site reality are connected rather than scattered across folders.", "cta3_t": "A forecast, not a beautiful report", "cta3_d": "The client sees what is evidenced, what needs a decision and what action follows.", "ui1_top": "ILLUSTRATIVE INTERFACE", "ui1_mid": "PLAN / FACT / RISK", "gallery_disclaimer": "Industrial construction, engineering and project management experience."}, "fr": {"nav_gallery": "Secteurs", "hero_title": "L’ingénierie du grand projet.<br><em>La maîtrise du résultat.</em>", "hero_desc": "CERTUS GROUP réunit ingénierie, construction industrielle et pilotage intelligent des projets complexes. L’Algérie est notre point de départ. L’Afrique est notre horizon stratégique.", "about_p2": "Le chantier, l’ingénierie, le planning, le budget et les risques doivent parler le même langage. Construction Intelligence relie la réalité du terrain aux décisions de pilotage.", "gallery_label": "SECTEURS", "gallery_title": "Des défis d’envergure.<br><em>Une approche systémique.</em>", "gallery_intro": "Des installations industrielles complexes aux infrastructures urbaines. L’envergure exige précision d’exécution et transparence de pilotage.", "cta_label": "VALEUR POUR LE CLIENT", "cta_title": "Les projets complexes exigent<br><em>des décisions claires.</em>", "cta1_t": "Un seul système de responsabilité", "cta1_d": "Ingénierie, exécution et contrôle du projet dans une seule architecture décisionnelle.", "cta2_t": "Détecter les écarts plus tôt", "cta2_d": "Photos, planning, documents et réalité terrain sont reliés, au lieu d’être dispersés.", "cta3_t": "Une prévision, pas un joli rapport", "cta3_d": "Le client voit ce qui est prouvé, ce qui demande une décision et l’action suivante.", "ui1_top": "INTERFACE ILLUSTRATIVE", "ui1_mid": "PLAN / RÉEL / RISQUE", "gallery_disclaimer": "Expérience en construction industrielle, ingénierie et gestion de projets."}};
+  for (const code of Object.keys(corrections)) Object.assign(translations[code],corrections[code]);
+  const additions = {"ru": {"form_phone": "Телефон", "form_download": "Скачать описание заявки", "friendship": "Россия и Алжир — партнёрство, доверие и общий созидательный опыт.", "strategy_label": "СТРАТЕГИЧЕСКАЯ ЦЕЛЬ", "strategy_goal": "Стать самой сильной цифровой компанией в мире в области строительства промышленных объектов."}, "en": {"form_phone": "Phone number", "form_download": "Download inquiry details", "friendship": "Russia and Algeria — partnership, trust and shared construction expertise.", "strategy_label": "STRATEGIC GOAL", "strategy_goal": "To become the world’s strongest digital company in industrial construction."}, "fr": {"form_phone": "Téléphone", "form_download": "Télécharger la demande", "friendship": "Russie et Algérie — partenariat, confiance et savoir-faire partagé.", "strategy_label": "OBJECTIF STRATÉGIQUE", "strategy_goal": "Devenir l’entreprise numérique la plus forte au monde dans la construction industrielle."}};
+  for(const code of Object.keys(additions)) Object.assign(translations[code], additions[code]);
+  translations.ar = {"nav_about": "نهجنا", "nav_intelligence": "ذكاء البناء", "nav_services": "خبراتنا", "nav_process": "منهج العمل", "nav_gallery": "مجالات العمل", "nav_contact": "تواصل معنا", "header_cta": "ناقش مشروعك", "hero_kicker": "الجزائر / أفريقيا / مشاريع معقدة", "hero_title": "نُنجز على نطاق واسع.<br><em>ونُحكم إدارة النتائج.</em>", "hero_desc": "CERTUS GROUP — الهندسة والبناء الصناعي والإدارة الذكية للمشاريع المعقدة. الجزائر نقطة انطلاقنا، وأفريقيا أفقنا الاستراتيجي.", "hero_cta1": "ابدأ الحوار", "hero_cta2": "اكتشف ذكاء البناء", "hero_stat1": "تشخيص أولي للمشروع", "hero_stat2": "الهندسة والبناء والرقابة", "hero_stat3": "مرجع موحد للواقع الفعلي", "hero_card_label": "النظام الأساسي", "hero_card_title": "ذكاء البناء", "hero_card_desc": "الخطة والتنفيذ الفعلي والصور والوثائق الفنية والمخاطر والتكاليف والمسؤوليات والمسار الحرج — ضمن منظومة إدارة واحدة.", "hero_card_li1": "الكشف المبكر عن الانحرافات", "hero_card_li2": "قرار بمسؤول محدد وموعد نهائي", "hero_card_li3": "رؤية شفافة لصاحب المشروع", "impact1_t": "تخصصنا في المشاريع المعقدة", "impact1_d": "نتولى إدارة المشروع، بما يتجاوز تنفيذ جزء منفرد منه.", "impact2_t": "ذكاء البناء", "impact2_d": "نربط أعمال البناء والبيانات بمنظومة لاتخاذ القرارات الإدارية.", "impact3_t": "قاعدة في شمال أفريقيا", "impact3_d": "حضور محلي في الجزائر لدعم المشاريع المعقدة والشركاء الدوليين.", "about_label": "نهجنا", "about_title": "ندير أعمال البناء.<br><em>وندير القدرة على التنبؤ بالنتائج.</em>", "about_p1": "يحتاج صاحب المشروع إلى معرفة ما يحدث في الموقع الآن، وأين تكمن المخاطر، وما الخطوة التالية. تبني CERTUS GROUP منظومة يكون فيها لكل مسألة حاسمة مسؤول وموعد وإجراء محدد.", "about_p2": "يجب أن تتكامل أعمال البناء الفعلية والحسابات الهندسية والجدول الزمني والميزانية والمخاطر بلغة واحدة. يربط ذكاء البناء واقع الموقع بقرارات الإدارة.", "metric1_n": "واحد", "metric1_t": "مرجع موحد للواقع الفعلي أمام صاحب المشروع", "metric2_n": "سرعة", "metric2_t": "استجابة سريعة لاتخاذ القرارات", "metric3_n": "وضوح", "metric3_t": "مسؤولية واضحة عن كل خطر", "intel_label": "ذكاء البناء", "intel_title": "البيانات تتجاوز حدود الملفات.<br><em>لتوجّه أعمال البناء.</em>", "intel_p1": "نجمع الجدول الزمني والتوثيق بالصور والإنجاز الفعلي والوثائق الفنية والمخاطر والتوريد والقرارات الإدارية ضمن منظومة رقمية موحدة. نستخدم الذكاء الاصطناعي والتحليلات للكشف المبكر عن الانحرافات.", "intel_b1_t": "72 ساعة", "intel_b1_d": "لفهم سريع للموقع ولواقع إدارة المشروع", "intel_b2_t": "غرفة التحكم", "intel_b2_d": "مركز قيادة للمشروع يوضح المدة والميزانية والنقاط الحرجة", "intel_b3_t": "دورة اتخاذ القرار", "intel_b3_d": "يتحول كل انحراف إلى إجراء بمسؤول وموعد محددين", "ui1_top": "واجهة توضيحية", "ui1_bottom": "المدة • الهيكل • الأنظمة الميكانيكية والكهربائية والصحية", "ui2_top": "المسؤول عن الإجراء", "ui2_mid": "انحراف ← قرار", "ui2_bottom": "المسؤول • الموعد • التأكيد", "services_label": "خبراتنا", "services_title": "منظومة متكاملة<br><em>لتنفيذ المشاريع المعقدة.</em>", "services_intro": "من الهندسة والهيكل التنظيمي للمشروع إلى تنفيذ الأعمال والرقابة الرقمية وإدارة الأزمات.", "srv1_t": "البناء الصناعي", "srv1_d": "الأعمال الإنشائية العامة والخرسانة المصبوبة في الموقع والهياكل المعدنية وتنسيق المقاولين والانضباط وجودة التنفيذ.", "srv2_t": "الهندسة والتحضير", "srv2_d": "الدراسة الفنية والحلول الإنشائية وخارطة طريق التنفيذ والتنسيق الهندسي.", "srv3_t": "إدارة المشاريع", "srv3_d": "التخطيط والميزانية وسجل المخاطر وإدارة الوثائق وضبط واجهات العمل وإيقاع المتابعة الإدارية.", "srv4_t": "ذكاء البناء", "srv4_d": "لوحات متابعة ومقارنة المخطط بالمنفذ وتوثيق بالصور وتحليل الانحرافات ومركز قيادة رقمي ومراجعة بمساعدة الذكاء الاصطناعي.", "srv5_t": "إدارة الأزمات", "srv5_d": "التدخل في المشاريع المتعثرة واستعادة السيطرة والقدرة على التنبؤ والانضباط في اتخاذ القرارات.", "srv6_t": "منصة تنفيذ المشاريع في أفريقيا", "srv6_d": "التنسيق المحلي والشراكات الدولية وتطوير منصة للمشاريع في الجزائر وأفريقيا.", "process_label": "منهج العمل", "process_title": "من الفوضى إلى النظام.<br><em>ومن النظام إلى النتائج.</em>", "process_intro": "نبني منظومة المشروع عبر فهم سريع للوضع وتنظيم الإدارة وتفعيل التنفيذ وإتاحة رؤية شفافة لصاحب المشروع.", "step1_t": "فهم المشروع", "step1_d": "خلال 72 ساعة نكوّن صورة عن المدد والكميات والتكاليف والوثائق والمخاطر والمسار الحرج.", "step2_t": "تصميم المنظومة", "step2_d": "نحدد الأدوار ودورية الاجتماعات ونقاط المراقبة وهيكل البيانات وآلية إعداد التقارير.", "step3_t": "تنفيذ منضبط", "step3_d": "نربط الموقع والمقاولين والوثائق بالخطة والموارد.", "step4_t": "رصد الانحرافات مبكرًا", "step4_d": "نرصد الانحرافات قبل بلوغ المرحلة الحرجة ونحولها إلى إجراءات محددة.", "step5_t": "تعزيز اليقين", "step5_d": "يحصل صاحب المشروع على صورة شفافة وقرارات واضحة ضمن رؤية متكاملة.", "gallery_label": "مجالات العمل", "gallery_title": "مهام كبيرة.<br><em>ونهج منظّم.</em>", "gallery_intro": "من الأنظمة الهندسية والتركيب الصناعي إلى البنية التحتية الحضرية. يتطلب حجم الأعمال دقة التنفيذ وشفافية الإدارة.", "gal1_k": "الصناعة / الطاقة", "gal1_t": "فريق في مشروع صناعي معقد", "gal2_k": "البنية التحتية", "gal2_t": "الدقة في البنية التحتية الكبرى", "gal3_k": "البناء", "gal3_t": "موقع فعلي وانضباط في التنفيذ", "gal4_k": "الهياكل الإنشائية", "gal4_t": "الهياكل المعدنية والخرسانة والتنسيق والرقابة على التنفيذ", "cta_label": "القيمة لصاحب المشروع", "cta_title": "في المشاريع المعقدة،<br><em>وضوح القرارات يصنع الفرق.</em>", "cta1_t": "مسؤولية موحدة", "cta1_d": "الهندسة والتنفيذ والرقابة الإدارية ضمن منطق موحد لاتخاذ القرار.", "cta2_t": "رصد مبكر للانحرافات", "cta2_d": "نربط الصور والجدول الزمني والوثائق والتقدم الفعلي ضمن منظومة واحدة.", "cta3_t": "توقعات تدعم القرار", "cta3_d": "يعرف صاحب المشروع ما تؤكده الوقائع وما يحتاج إلى قرار وما الإجراء التالي.", "contact_label": "تواصل معنا", "contact_title": "مشروعك معقد؟<br><em>لدينا ما نناقشه معك.</em>", "mission_title": "رسالتنا", "mission_p1": "نُرسي معيارًا عالميًا للبناء الصناعي الرقمي، يجمع الخبرة الهندسية والفريق القوي والتقنيات الحديثة والبيانات والذكاء الاصطناعي.", "mission_p2": "نتحمل مسؤولية المشاريع الصناعية المعقدة، من الفكرة إلى التشغيل، لنحقق لصاحب المشروع نتائج يمكن التنبؤ بها من حيث المدة والتكلفة والجودة والسلامة.", "mission_p3": "نهيئ بيئة كريمة لنمو الأفراد، ونطور الصناعة في الجزائر والدول الأفريقية، ونبني منشآت وأنظمة وشركة تكون إرثًا للأجيال القادمة.", "contact_intro": "املأ النموذج لإرسال طلبك إلى info@certusdz.com. سنرد على عنوان بريدك الإلكتروني.", "form_name": "الاسم", "form_company": "الشركة", "form_email": "البريد الإلكتروني", "form_region": "البلد / المنطقة", "form_type": "نوع المشروع", "opt1": "البناء الصناعي", "opt2": "الهندسة", "opt3": "ذكاء البناء", "opt4": "إدارة الأزمات", "opt5": "أخرى", "form_desc": "وصف موجز للمهمة", "form_placeholder": "السياق والهدف والمدة والقيود وما تتوقعه منا", "form_delivery": "إرسال الطلب عبر", "form_send": "إرسال الطلب", "form_download": "تنزيل تفاصيل الطلب", "footer_text": "البناء الصناعي • ذكاء البناء • الجزائر / أفريقيا", "footer_back": "العودة إلى الأعلى ↑", "status_copied": "تم نسخ نص الطلب.", "status_download": "الملف جاهز للحفظ.", "status_invalid": "يرجى ملء الحقول المطلوبة.", "ui1_mid": "المخطط / المنفذ / المخاطر", "gallery_disclaimer": "خبرتنا في البناء الصناعي والهندسة وإدارة المشاريع.", "form_phone": "رقم الهاتف", "friendship": "روسيا والجزائر — شراكة وثقة وخبرات مشتركة في البناء.", "strategy_label": "هدفنا الاستراتيجي", "strategy_goal": "أن نصبح أقوى شركة رقمية في العالم في مجال تشييد المنشآت الصناعية."};
+  Object.assign(translations.ru,{hero_portfolio:"Смотреть портфолио компаний"});Object.assign(translations.en,{hero_portfolio:"Explore our project portfolio"});Object.assign(translations.fr,{hero_portfolio:"Découvrir nos références"});Object.assign(translations.ar,{hero_portfolio:"استعرض ملف المشاريع"});
+  const translatable = [...document.querySelectorAll('[data-t], [data-html-t], [data-placeholder-t]')];
+  function applyLang(lang) {
+    const dict = translations[lang] || translations.ru;
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    document.querySelectorAll("[data-brand-name]").forEach(el=>el.textContent=({ru:"ЭТАЛОН",en:"ETALON",fr:"ETALON",ar:"إيتالون"})[lang]||"ETALON");
+    translatable.forEach(el => {
+      const key = el.dataset.t || el.dataset.htmlT || el.dataset.placeholderT;
+      const val = dict[key];
+      if (!val) return;
+      if (el.dataset.htmlT) el.innerHTML = val;
+      else if (el.dataset.placeholderT) el.setAttribute('placeholder', val);
+      else el.textContent = val;
+    });
+    document.querySelectorAll('.lang').forEach(btn => btn.classList.toggle('is-active', btn.dataset.lang === lang));
+    try { localStorage.setItem('certus-lang-v2', lang); } catch (e) {}
+    const languagePath = '/'+lang+'/';
+    if(location.pathname!==languagePath)history.replaceState(null,'',languagePath+location.search+location.hash);
+  }
+  document.querySelectorAll('.lang').forEach(btn => btn.addEventListener('click', () => applyLang(btn.dataset.lang)));
+  let stored = 'ru';
+  const pathLanguage=location.pathname.split('/')[1];
+  try { stored = localStorage.getItem('certus-lang-v2') || 'ru'; } catch (e) {}
+  applyLang(['ru','en','fr','ar'].includes(pathLanguage)?pathLanguage:stored);
+
+  const menuToggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('nav');
+  menuToggle?.addEventListener('click', () => nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+
+  const form = document.getElementById('briefForm');
+  const status = document.getElementById('formStatus');
+  function buildText() {
+    if (!form.reportValidity()) {
+      const lang = document.documentElement.lang || 'ru';
+      status.textContent = (translations[lang] || translations.ru).status_invalid;
+      return null;
+    }
+    const data = new FormData(form);
+    return [
+      'CERTUS GROUP — PROJECT BRIEF',
+      '--------------------------------',
+      'Name: ' + (data.get('name') || ''),
+      'Company: ' + (data.get('company') || ''),
+      'Email: ' + (data.get('email') || ''),
+      'Phone: ' + (data.get('phone') || ''),
+      'Country / Region: ' + (data.get('region') || ''),
+      'Project type: ' + (data.get('type') || ''),
+      '',
+      'Task:',
+      (data.get('task') || ''),
+      '',
+      'Prepared locally via CERTUS website concept.'
+    ].join('\n');
+  }
+  document.getElementById('downloadBrief')?.addEventListener('click', () => {
+    const text = buildText();
+    if (!text) return;
+    const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'CERTUS_project_brief.txt';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    const lang = document.documentElement.lang || 'ru';
+    status.textContent = (translations[lang] || translations.ru).status_download;
+  });
+})();
+</script><script>(() => {
+  'use strict';
+  const portableImages={"etal_vsmpo.webp":"/assets/6b9b6e2b1a963ba0da.webp","etal_vsmpo2.webp":"/assets/fd9f75a29c2e787f45.webp","etal_boeing.webp":"/assets/73fb21806f8111cca4.webp","etal_gazprom.webp":"/assets/192dcbf8a2549c63a4.webp","etal_sft.webp":"/assets/e7a34fc6ea1f2dd748.webp","etal_makar.webp":"/assets/2db4cf8527049042f1.webp","etal_roley.webp":"/assets/9441cbde3ccdc9f011.webp","etal_uztso.webp":"/assets/9097b1f288cb9217c2.webp","graphic_industry.webp":"/assets/da5ba614a428441f35.webp","etal_zav.webp":"/assets/2fc0c24631aa1a0752.webp","etal_milk.webp":"/assets/ae2c4211c7e04ecec4.webp","etal_komos.webp":"/assets/007e83795d7cec5fc9.webp","etal_pcbk.webp":"/assets/57559fc95cce0b4c32.webp","etalon_industry_9.webp":"/assets/446631c4a104336ad6.webp","etalon_industry_10.webp":"/assets/e2dc40aed7c7e46fcd.webp","etalon_industry_11.webp":"/assets/1b314712bd19e27c03.webp","etalon_industry_12.webp":"/assets/bdb78dbf6ee0eba351.webp","etalon_industry_13.webp":"/assets/5a242ad97e99e97152.webp","etalon_industry_15.webp":"/assets/4147d1ad428479f5a6.webp","etalon_industry_14.webp":"/assets/1c50015431cc43a182.webp","etalon_industry_16.webp":"/assets/719626276bf0274694.webp"};
+  const asset=(name)=>portableImages[name]||"/assets/"+encodeURIComponent(name);
+  const clients = [{"id":"vsmpo","brand":"etalon","category":"industry","name":{"ru":"ВСМПО-АВИСМА","en":"VSMPO-AVISMA","fr":"VSMPO-AVISMA","ar":"فيسمبو-أفيسما (VSMPO-AVISMA)"},"legal":"ПАО «Корпорация ВСМПО-АВИСМА»","image":"etal_vsmpo.webp","summary":{"ru":"Титановая промышленность · Верхняя Салда","en":"Titanium industry · Verkhnyaya Salda","fr":"Industrie du titane · Verkhnyaya Salda","ar":"صناعة التيتانيوم · فيرخنيايا سالدا"},"projects":[{"name":{"ru":"Промышленные объекты корпорации","en":"Corporation industrial facilities","fr":"Sites industriels de la corporation","ar":"المنشآت الصناعية للمؤسسة"},"year":"с 2008 г.","location":"Верхняя Салда, Россия","scope":{"ru":"Устройство монолитных железобетонных фундаментов; монтаж металлоконструкций и оборудования; устройство упрочнённых и наливных промышленных полов; общестроительные работы.","en":"Monolithic reinforced-concrete foundations; structural steel and equipment installation; reinforced and self-levelling industrial floors; civil works.","fr":"Fondations monolithiques en béton armé ; montage de charpentes métalliques et d’équipements ; sols industriels renforcés et autonivelants ; gros œuvre.","ar":"تنفيذ أساسات من الخرسانة المسلحة المصبوبة في الموقع؛ تركيب الهياكل المعدنية والمعدات؛ تنفيذ أرضيات صناعية مقوّاة وذاتية التسوية؛ أعمال إنشائية عامة."},"metrics":[{"value":"80 000+ м³","ru":"бетона","en":"concrete","fr":"de béton","ar":"خرسانة"},{"value":"100 000 м²","ru":"промышленных полов","en":"industrial floors","fr":"de sols industriels","ar":"أرضيات صناعية"},{"value":"40 000 м²","ru":"общестроительных работ","en":"civil works","fr":"de gros œuvre","ar":"أعمال إنشائية عامة"}],"image":"etal_vsmpo.webp"},{"name":{"ru":"Производственный комплекс мехобработки дисков и колёс","en":"Machining complex for discs and wheels","fr":"Complexe d’usinage de disques et roues","ar":"مجمع إنتاج للتشغيل الميكانيكي للأقراص والعجلات"},"year":"2019–2020","location":"Верхняя Салда, Россия","scope":{"ru":"Производственный комплекс площадью 12 000 м².","en":"The presentation records involvement at the construction start of a 12,000 m² production complex. Completion status requires confirmation.","fr":"La présentation mentionne le lancement de travaux sur un complexe de 12 000 m². Le statut d’achèvement reste à confirmer.","ar":"مجمع إنتاج بمساحة 12 000 م²."},"metrics":[{"value":"12 000 м²","ru":"площадь объекта","en":"project area","fr":"surface du projet","ar":"مساحة المشروع"}],"image":"etal_vsmpo2.webp"}],"legal_ar":"شركة كوربوريشن فيسمبو-أفيسما المساهمة العامة"},{"id":"boeing","brand":"etalon","category":"industry","name":{"ru":"Ural Boeing Manufacturing","en":"Ural Boeing Manufacturing","fr":"Ural Boeing Manufacturing","ar":"أورال بوينغ للتصنيع (Ural Boeing Manufacturing)"},"legal":"ПАО «ВСМПО-АВИСМА» / Ural Boeing Manufacturing","image":"etal_boeing.webp","summary":{"ru":"ОЭЗ «Титановая долина» · производственная площадка","en":"Titanium Valley SEZ · manufacturing facility","fr":"ZES « Vallée du titane » · site industriel","ar":"منطقة وادي التيتانيوم الاقتصادية الخاصة · موقع إنتاج"},"projects":[{"name":{"ru":"Производственная площадка «Титановой долины»","en":"Titanium Valley production site","fr":"Site industriel de la Vallée du titane","ar":"موقع الإنتاج في وادي التيتانيوم"},"year":"2017","location":"Верхняя Салда, Россия","scope":{"ru":"Устройство упрочнённых бетонных полов, полимерное покрытие фундаментов и благоустройство территории.","en":"Hardened concrete industrial floors, polymer foundation coatings and site landscaping.","fr":"Sols industriels en béton durci, revêtements polymères de fondations et aménagements extérieurs.","ar":"تنفيذ أرضيات خرسانية مقوّاة وطلاء بوليمري للأساسات وتهيئة الموقع."},"metrics":[{"value":"20 000 м²","ru":"площадь работ","en":"work area","fr":"surface de travaux","ar":"مساحة الأعمال"},{"value":"4 000+ м³","ru":"бетона","en":"concrete","fr":"de béton","ar":"خرسانة"}],"image":"etal_boeing.webp"}],"legal_ar":"فيسمبو-أفيسما المساهمة العامة / Ural Boeing Manufacturing"},{"id":"gazprom-terminal","brand":"etalon","category":"energy","name":{"ru":"Газпромнефть-Терминал","en":"Gazpromneft-Terminal","fr":"Gazpromneft-Terminal","ar":"غازبروم نفط-تيرمينال"},"legal":"ПАО «Газпромнефть-Терминал»","image":"etal_gazprom.webp","summary":{"ru":"Нефтяная инфраструктура · Нижний Тагил","en":"Oil infrastructure · Nizhny Tagil","fr":"Infrastructure pétrolière · Nijni Taguil","ar":"البنية التحتية النفطية · نيجني تاغيل"},"projects":[{"name":{"ru":"Очистные сооружения Нижнетагильской нефтебазы","en":"Nizhny Tagil oil terminal treatment facilities","fr":"Station de traitement du dépôt pétrolier de Nijni Taguil","ar":"منشآت معالجة المياه في مستودع نيجني تاغيل النفطي"},"year":"2019–2020","location":"Нижний Тагил, Россия","scope":{"ru":"Строительство комплекса производственных очистных сооружений на нефтебазе.","en":"Construction of industrial wastewater treatment facilities at the oil depot.","fr":"Construction d’un complexe de traitement des eaux industrielles sur le dépôt pétrolier.","ar":"إنشاء مجمع لمعالجة مياه الصرف الصناعي في المستودع النفطي."},"metrics":[{"value":"1 800 м³","ru":"бетона","en":"concrete","fr":"de béton","ar":"خرسانة"}],"image":"etal_gazprom.webp"}],"legal_ar":"شركة غازبروم نفط-تيرمينال المساهمة العامة"},{"id":"sft","brand":"etalon","category":"industry","name":{"ru":"SFT Group / Алексинская БКФ","en":"SFT Group / Aleksinskaya BKF","fr":"SFT Group / Cartonnerie d’Aleksine","ar":"مجموعة SFT / مصنع أليكسين للورق والكرتون"},"legal":"ООО «Алексинская БКФ»","image":"etal_sft.webp","summary":{"ru":"Целлюлозно-бумажная промышленность · Алексин","en":"Pulp & paper · Aleksin","fr":"Industrie papetière · Aleksine","ar":"صناعة اللب والورق · أليكسين"},"projects":[{"name":{"ru":"Комплекс очистных сооружений Алексинской БКФ","en":"Aleksin paper mill treatment facilities","fr":"Installations de traitement de la cartonnerie d’Aleksine","ar":"مجمع معالجة المياه لمصنع أليكسين للورق والكرتون"},"year":"2021–2022","location":"Алексин, Россия","scope":{"ru":"Строительство комплекса очистных сооружений, гидротехнический бетон и подземные технологические коммуникации.","en":"Construction of industrial treatment facilities, hydrotechnical concrete structures and underground process utilities.","fr":"Construction d’installations de traitement, béton hydraulique et réseaux industriels souterrains.","ar":"إنشاء مجمع لمعالجة المياه، وأعمال الخرسانة الهيدروليكية وشبكات المرافق الصناعية تحت الأرض."},"metrics":[{"value":"4 000 м³","ru":"гидротехнического бетона","en":"hydrotechnical concrete","fr":"de béton hydraulique","ar":"خرسانة هيدروليكية"},{"value":"5 000 м","ru":"подземных коммуникаций","en":"underground utilities","fr":"de réseaux souterrains","ar":"شبكات مرافق تحت الأرض"}],"image":"etal_sft.webp"}],"legal_ar":"شركة مصنع أليكسين للورق والكرتون ذات المسؤولية المحدودة"},{"id":"bridge","brand":"etalon","category":"infra","name":{"ru":"МУП УКС / ГУДСР / МостСтройПроект","en":"Yekaterinburg municipal client / GUDSR","fr":"Maîtrise d’ouvrage municipale / GUDSR","ar":"مديرية الإنشاءات البلدية / غودسر / موست ستروي برويكت"},"legal":"МУП «УКС г. Екатеринбурга», ООО «ГУДСР», «МостСтройПроект»","image":"etal_makar.webp","summary":{"ru":"Транспортная инфраструктура · Екатеринбург","en":"Transport infrastructure · Yekaterinburg","fr":"Infrastructure de transport · Ekaterinbourg","ar":"البنية التحتية للنقل · يكاترينبورغ"},"projects":[{"name":{"ru":"Реконструкция Макаровского моста","en":"Makarovsky Bridge reconstruction","fr":"Réhabilitation du pont Makarovsky","ar":"إعادة تأهيل جسر ماكاروفسكي"},"year":"2017","location":"Екатеринбург, Россия","scope":{"ru":"Ремонт бетонных конструкций, торкретирование, земляные работы, устройство железобетонных ростверков, стоек, ригелей, подферменных площадок и арок, гидроизоляция.","en":"Concrete repairs, shotcrete, earthworks, reinforced-concrete pile caps, posts, beams, bearing seats and arches, waterproofing.","fr":"Réparation de béton, béton projeté, terrassement, longrines, poteaux, poutres, appuis et arches en béton armé, étanchéité.","ar":"إصلاح المنشآت الخرسانية والخرسانة المرشوشة والأعمال الترابية، وتنفيذ قبعات الخوازيق والأعمدة والجوائز العرضية وقواعد ارتكاز الجسر والأقواس من الخرسانة المسلحة، وأعمال العزل المائي."},"metrics":[],"image":"etal_makar.webp"}],"legal_ar":"المؤسسة البلدية مديرية الإنشاءات في يكاترينبورغ، وغودسر ذات المسؤولية المحدودة، وموست ستروي برويكت"},{"id":"roley","brand":"etalon","category":"logistics","name":{"ru":"ЮгПромСтрой","en":"YugPromStroy","fr":"YugPromStroy","ar":"يوغ بروم ستروي"},"legal":"ООО «ЮгПромСтрой»","image":"etal_roley.webp","summary":{"ru":"Складской комплекс «Ролей», класс А","en":"Roley Class-A logistics facility","fr":"Plateforme logistique Roley, classe A","ar":"مجمع مستودعات رولي من الفئة A"},"projects":[{"name":{"ru":"Складской комплекс «Ролей» класса А","en":"Roley Class-A logistics warehouse","fr":"Entrepôt Roley de classe A","ar":"مجمع مستودعات رولي من الفئة A"},"year":"2017","location":"Екатеринбург, Россия","scope":{"ru":"Водоотведение речного русла с новым бетонным лотком, гидроизоляция, подпорные стенки, бетонные полы с топпингом в холодильных и складских зонах.","en":"Watercourse diversion with a new concrete channel, waterproofing, retaining walls, hardened concrete floors in refrigerated and warehouse areas.","fr":"Déviation de cours d’eau, nouveau caniveau en béton, étanchéité, murs de soutènement, sols béton durcis des zones frigorifiques et de stockage.","ar":"تحويل مجرى النهر باستخدام قناة خرسانية جديدة، والعزل المائي والجدران الاستنادية والأرضيات الخرسانية المقوّاة بطبقة سطحية في مناطق التبريد والتخزين."},"metrics":[],"image":"etal_roley.webp"}],"legal_ar":"شركة يوغ بروم ستروي ذات المسؤولية المحدودة"},{"id":"uztso","brand":"etalon","category":"logistics","name":{"ru":"Уральский завод ТСО","en":"Ural Trading & Warehouse Equipment Plant","fr":"Usine de l’Oural d’équipements de stockage","ar":"مصنع الأورال لمعدات التجارة والتخزين"},"legal":"ООО «Уральский завод торгового и складского оборудования»","image":"etal_uztso.webp","summary":{"ru":"Производство и логистика · Екатеринбург","en":"Industrial and warehousing · Yekaterinburg","fr":"Industrie et logistique · Ekaterinbourg","ar":"الإنتاج والخدمات اللوجستية · يكاترينبورغ"},"projects":[{"name":{"ru":"Производственно-складской объект УЗТСО","en":"Ural equipment factory and warehouse","fr":"Usine et entrepôt UZTSO","ar":"منشأة إنتاج وتخزين لمصنع الأورال لمعدات التجارة والتخزين"},"year":"2017–2018","location":"Екатеринбург, Россия","scope":{"ru":"Полимерные наливные полы, бетонные полы с топпингом, строительство производственного склада, благоустройство и общестроительные работы.","en":"Polymer floors, hardened concrete floors, construction of industrial warehouse, landscaping and civil works.","fr":"Sols polymères, sols en béton durci, construction d’entrepôt industriel, aménagements et gros œuvre.","ar":"أرضيات بوليمرية ذاتية التسوية وأرضيات خرسانية مقوّاة بطبقة سطحية، وإنشاء مستودع إنتاج وتهيئة الموقع وأعمال إنشائية عامة."},"metrics":[],"image":"etal_uztso.webp"}],"legal_ar":"شركة مصنع الأورال لمعدات التجارة والتخزين ذات المسؤولية المحدودة"},{"id":"svyatogor","brand":"etalon","category":"industry","name":{"ru":"Святогор","en":"Svyatogor","fr":"Sviatogor","ar":"سفياتوغور"},"legal":"ОАО «Святогор»","image":"graphic_industry.webp","summary":{"ru":"Промышленная площадка · Красноуральск","en":"Industrial site · Krasnouralsk","fr":"Site industriel · Krasnoouralsk","ar":"موقع صناعي · كراسنورالسك"},"projects":[{"name":{"ru":"Работы на производственной площадке «Святогор»","en":"Svyatogor industrial construction works","fr":"Travaux sur le site industriel Sviatogor","ar":"أعمال في موقع إنتاج سفياتوغور"},"year":"2014","location":"Красноуральск, Россия","scope":{"ru":"Монолитные железобетонные фундаменты, монтаж металлоконструкций и общестроительные работы. Изображение в карточке — графическая заставка, не фотография объекта.","en":"Monolithic reinforced concrete foundations, structural steel installation and general construction works. The card artwork is a graphic placeholder, not a photograph of the site.","fr":"Fondations monolithiques en béton armé, montage de charpentes métalliques et gros œuvre. L’illustration de la carte est un visuel graphique et non une photo du site.","ar":"أساسات من الخرسانة المسلحة المصبوبة في الموقع، وتركيب هياكل معدنية وأعمال إنشائية عامة. الصورة في البطاقة رسم توضيحي وليست صورة فوتوغرافية للمشروع."},"metrics":[{"value":"500+ м³","ru":"бетона","en":"concrete","fr":"de béton","ar":"خرسانة"}],"image":"graphic_industry.webp"}],"legal_ar":"شركة سفياتوغور المساهمة المفتوحة"},{"id":"zavyazovskoe","brand":"etalon","category":"industry","name":{"ru":"Вагоноремонтное предприятие Завязовское","en":"Zavyazovskoye Railcar Repair Plant","fr":"Atelier ferroviaire Zaviazovskoïe","ar":"مؤسسة زافيازوفْسكويه لإصلاح عربات السكك الحديدية"},"legal":"ООО «Вагоноремонтное предприятие Завязовское»","image":"etal_zav.webp","summary":{"ru":"Железнодорожная промышленность · Нижний Тагил","en":"Rail industry · Nizhny Tagil","fr":"Industrie ferroviaire · Nijni Taguil","ar":"صناعة السكك الحديدية · نيجني تاغيل"},"projects":[{"name":{"ru":"Производственные работы вагоноремонтного предприятия","en":"Railcar repair plant works","fr":"Travaux d’atelier de réparation ferroviaire","ar":"أعمال إنتاج في مؤسسة إصلاح عربات السكك الحديدية"},"year":"2015–2016","location":"Нижний Тагил, Россия","scope":{"ru":"Железобетонные фундаменты, монтаж металлоконструкций, упрочнённые и наливные полы, общестроительные работы.","en":"Reinforced concrete foundations, structural steel installation, industrial hardened/self-levelling floors and civil works.","fr":"Fondations en béton armé, charpentes métalliques, sols renforcés et autonivelants, gros œuvre.","ar":"أساسات خرسانية مسلحة وتركيب هياكل معدنية وأرضيات مقوّاة وذاتية التسوية وأعمال إنشائية عامة."},"metrics":[{"value":"2 000+ м³","ru":"бетона","en":"concrete","fr":"de béton","ar":"خرسانة"}],"image":"etal_zav.webp"}],"legal_ar":"شركة زافيازوفْسكويه لإصلاح عربات السكك الحديدية ذات المسؤولية المحدودة"},{"id":"milk","brand":"etalon","category":"industry","name":{"ru":"Молочная благодать","en":"Molochnaya Blagodat","fr":"Molochnaïa Blagodat","ar":"مولوتشنايا بلاغودات"},"legal":"ООО «Молочная благодать»","image":"etal_milk.webp","summary":{"ru":"Пищевая промышленность · Кушва","en":"Food industry · Kushva","fr":"Agroalimentaire · Kouchva","ar":"الصناعات الغذائية · كوشفا"},"projects":[{"name":{"ru":"Ремонт кровель и бетонных конструкций","en":"Roof and concrete structure repairs","fr":"Réparation de toiture et structures en béton","ar":"إصلاح الأسقف والمنشآت الخرسانية"},"year":"2017","location":"Кушва, Россия","scope":{"ru":"Устройство мягкой кровли, ремонт бетонных конструкций и торцов парапетов, изготовление и монтаж нащельников и козырьков.","en":"Soft roof installation, concrete and parapet repair, fabrication and installation of flashings and canopies.","fr":"Pose de toiture souple, réparations des structures en béton et acrotères, fabrication et pose de solins et auvents.","ar":"تنفيذ تغطيات أسقف مرنة، وإصلاح المنشآت الخرسانية وأطراف حواجز الأسطح، وتصنيع وتركيب أغطية الفواصل والمظلات."},"metrics":[],"image":"etal_milk.webp"}],"legal_ar":"شركة مولوتشنايا بلاغودات ذات المسؤولية المحدودة"},{"id":"komos","brand":"etalon","category":"industry","name":{"ru":"КОМОС ГРУПП","en":"KOMOS GROUP","fr":"KOMOS GROUP","ar":"مجموعة كوموس"},"legal":"ООО «КОМОС ГРУПП» (агропромышленный холдинг)","image":"etal_komos.webp","summary":{"ru":"Агропромышленный холдинг · Ижевск","en":"Agro-industrial holding · Izhevsk","fr":"Groupe agro-industriel · Ijevsk","ar":"مجموعة زراعية صناعية قابضة · إيجيفسك"},"projects":[{"name":{"ru":"Производственные работы агропромышленного холдинга","en":"Agro-industrial facility works","fr":"Travaux sur un site agro-industriel","ar":"أعمال إنتاج للمجموعة الزراعية الصناعية القابضة"},"year":"2016","location":"Ижевск, Россия","scope":{"ru":"Монтаж металлоконструкций, устройство фундаментов, промышленные полы, электромонтажные работы.","en":"Structural steel assembly, foundations, industrial floors and electrical installation.","fr":"Charpentes métalliques, fondations, sols industriels et travaux électriques.","ar":"تركيب هياكل معدنية وتنفيذ أساسات وأرضيات صناعية وأعمال تركيبات كهربائية."},"metrics":[],"image":"etal_komos.webp"}],"legal_ar":"شركة مجموعة كوموس ذات المسؤولية المحدودة (مجموعة زراعية صناعية قابضة)"},{"id":"pcbk","brand":"etalon","category":"industry","name":{"ru":"ПЦБК","en":"PCBK / Perm Pulp & Paper","fr":"PCBK / Papeterie de Perm","ar":"بي سي بي كيه (PCBK)"},"legal":"Группа предприятий «ПЦБК»","image":"etal_pcbk.webp","summary":{"ru":"Целлюлозно-бумажное производство · Пермь","en":"Pulp and paper · Perm","fr":"Industrie papetière · Perm","ar":"إنتاج اللب والورق · بيرم"},"projects":[{"name":{"ru":"Реконструкция кровли производственного объекта","en":"Industrial roof reconstruction","fr":"Réhabilitation de toiture industrielle","ar":"إعادة تأهيل سقف منشأة إنتاج"},"year":"2018–2019","location":"Пермь, Россия","scope":{"ru":"Реконструкция кровельного покрытия производственного объекта.","en":"Reconstruction of industrial facility roof covering.","fr":"Réhabilitation de toiture sur un site industriel.","ar":"إعادة تأهيل غطاء سقف منشأة إنتاج."},"metrics":[{"value":"11 000 м²","ru":"кровельных работ","en":"roof reconstruction","fr":"de réfection de toiture","ar":"أعمال الأسقف"}],"image":"etal_pcbk.webp"}],"legal_ar":"مجموعة شركات بي سي بي كيه"},{"id":"tatneft","brand":"etalon","category":"energy","name":{"ru":"Татнефть","en":"Tatneft","fr":"Tatneft","ar":"تات نفط"},"legal":"ПАО «Татнефть» им. В. Д. Шашина","image":"etalon_industry_9.webp","summary":{"ru":"Нефтепереработка · два технологических объекта","en":"Oil refining · two process units","fr":"Raffinage · deux unités de procédé","ar":"تكرير النفط · منشأتان تقنيتان"},"projects":[{"name":{"ru":"Установка гидроочистки тяжёлого газойля коксования","en":"Coker heavy gas oil hydrotreating unit","fr":"Unité d’hydrotraitement du gazole lourd de cokéfaction","ar":"وحدة المعالجة الهيدروجينية لزيت الغاز الثقيل الناتج عن التكويك"},"year":"—","location":"Россия","scope":{"ru":"Реализованный объект компании «ЭТАЛОН».","en":"Project executed and completed by ETALON (owner-confirmed). The 2024 corporate presentation identifies the facility but does not detail the individual construction packages or quantities.","fr":"Projet réalisé et achevé par ETALON (information confirmée par le propriétaire). La présentation d’entreprise de 2024 identifie l’ouvrage sans détailler les lots exécutés ni les quantités.","ar":"مشروع أنجزته شركة إيتالون."},"metrics":[],"image":"etalon_industry_9.webp","scope_undisclosed":true},{"name":{"ru":"Комбинированная установка изомеризации лёгкой нафты и секция сплиттера","en":"Light naphtha isomerization and splitter complex","fr":"Unité combinée d’isomérisation et de fractionnement du naphta","ar":"وحدة متكاملة لأزمرة النافثا الخفيفة وقسم الفصل"},"year":"—","location":"Россия","scope":{"ru":"Реализованный объект компании «ЭТАЛОН».","en":"Project executed and completed by ETALON (owner-confirmed). The 2024 corporate presentation identifies the facility but does not detail the individual construction packages or quantities.","fr":"Projet réalisé et achevé par ETALON (information confirmée par le propriétaire). La présentation d’entreprise de 2024 identifie l’ouvrage sans détailler les lots exécutés ni les quantités.","ar":"مشروع أنجزته شركة إيتالون."},"metrics":[],"image":"etalon_industry_10.webp","scope_undisclosed":true}],"legal_ar":"شركة تات نفط المساهمة العامة باسم ف. د. شاشين"},{"id":"rospan","brand":"etalon","category":"energy","name":{"ru":"Роспан Интернешнл","en":"Rospan International","fr":"Rospan International","ar":"روسبان إنترناشونال"},"legal":"АО «РОСПАН ИНТЕРНЕШНЛ»","image":"etalon_industry_11.webp","summary":{"ru":"Газовая отрасль · Восточный Уренгой","en":"Natural gas · East Urengoy","fr":"Gaz naturel · Ourengoï oriental","ar":"صناعة الغاز · شرق أورينغوي"},"projects":[{"name":{"ru":"Объекты подготовки газа и газового конденсата","en":"Gas and gas condensate treatment facilities","fr":"Installations de traitement du gaz et des condensats","ar":"منشآت معالجة الغاز ومكثفاته"},"year":"—","location":"Восточно-Уренгойский лицензионный участок, Россия","scope":{"ru":"Реализованный объект компании «ЭТАЛОН».","en":"Project executed and completed by ETALON (owner-confirmed). The 2024 corporate presentation identifies the facility but does not detail the individual construction packages or quantities.","fr":"Projet réalisé et achevé par ETALON (information confirmée par le propriétaire). La présentation d’entreprise de 2024 identifie l’ouvrage sans détailler les lots exécutés ni les quantités.","ar":"مشروع أنجزته شركة إيتالون."},"metrics":[],"image":"etalon_industry_11.webp","scope_undisclosed":true}],"legal_ar":"شركة روسبان إنترناشونال المساهمة"},{"id":"rosneft","brand":"etalon","category":"energy","name":{"ru":"НК Роснефть","en":"Rosneft","fr":"Rosneft","ar":"شركة روس نفط"},"legal":"ПАО «НК Роснефть» / АО «Новокуйбышевский НПЗ»","image":"etalon_industry_12.webp","summary":{"ru":"Нефтепереработка · Новокуйбышевск","en":"Oil refining · Novokuybyshevsk","fr":"Raffinage · Novokouïbychevsk","ar":"تكرير النفط · نوفوكويبيشيفسك"},"projects":[{"name":{"ru":"Комплекс гидрокрекинга — комбинированная установка Новокуйбышевского НПЗ","en":"Hydrocracking complex — Novokuybyshevsk refinery","fr":"Complexe d’hydrocraquage de la raffinerie de Novokouïbychevsk","ar":"مجمع التكسير الهيدروجيني — الوحدة المتكاملة لمصفاة نوفوكويبيشيفسك"},"year":"—","location":"Новокуйбышевск, Россия","scope":{"ru":"Реализованный объект компании «ЭТАЛОН».","en":"Project executed and completed by ETALON (owner-confirmed). The 2024 corporate presentation identifies the facility but does not detail the individual construction packages or quantities.","fr":"Projet réalisé et achevé par ETALON (information confirmée par le propriétaire). La présentation d’entreprise de 2024 identifie l’ouvrage sans détailler les lots exécutés ni les quantités.","ar":"مشروع أنجزته شركة إيتالون."},"metrics":[],"image":"etalon_industry_12.webp","scope_undisclosed":true}],"legal_ar":"شركة روس نفط المساهمة العامة / مصفاة نوفوكويبيشيفسك المساهمة"},{"id":"bashneft","brand":"etalon","category":"energy","name":{"ru":"Башнефть","en":"Bashneft","fr":"Bashneft","ar":"باش نفط"},"legal":"ПАО АНК «Башнефть»","image":"etalon_industry_13.webp","summary":{"ru":"Нефтехимия · УНПЗ и Уфанефтехим","en":"Refining · UNPZ & Ufaneftekhim","fr":"Raffinage · UNPZ et Oufaneftekhim","ar":"البتروكيماويات · مصفاة أوفا وأوفانفتيخيم"},"projects":[{"name":{"ru":"Строительство резервной технологической линии УПЭС","en":"Backup technological UPEs process line","fr":"Construction de la ligne technologique de réserve UPES","ar":"إنشاء خط تقني احتياطي لوحدة UPES"},"year":"—","location":"Башнефть-УНПЗ, Россия","scope":{"ru":"Реализованный объект компании «ЭТАЛОН».","en":"Project executed and completed by ETALON (owner-confirmed). The 2024 corporate presentation identifies the facility but does not detail the individual construction packages or quantities.","fr":"Projet réalisé et achevé par ETALON (information confirmée par le propriétaire). La présentation d’entreprise de 2024 identifie l’ouvrage sans détailler les lots exécutés ni les quantités.","ar":"مشروع أنجزته شركة إيتالون."},"metrics":[],"image":"etalon_industry_13.webp","scope_undisclosed":true},{"name":{"ru":"Промышленный объект Башнефть-Уфанефтехим","en":"Bashneft-Ufaneftekhim industrial facility","fr":"Site industriel Bashneft-Oufaneftekhim","ar":"منشأة صناعية في باش نفط-أوفانفتيخيم"},"year":"—","location":"Уфа, Россия","scope":{"ru":"Реализованный объект компании «ЭТАЛОН».","en":"Project executed and completed by ETALON (owner-confirmed). The 2024 corporate presentation identifies the facility but does not detail the individual construction packages or quantities.","fr":"Projet réalisé et achevé par ETALON (information confirmée par le propriétaire). La présentation d’entreprise de 2024 identifie l’ouvrage sans détailler les lots exécutés ni les quantités.","ar":"مشروع أنجزته شركة إيتالون."},"metrics":[],"image":"etalon_industry_15.webp","scope_undisclosed":true}],"legal_ar":"شركة باش نفط النفطية المساهمة العامة"},{"id":"omsk-kauchuk","brand":"etalon","category":"energy","name":{"ru":"Омский каучук","en":"Omsk Kauchuk","fr":"Omsk Kaoutchouk","ar":"أومسكي كاوتشوك"},"legal":"ПАО «Омский каучук»","image":"etalon_industry_14.webp","summary":{"ru":"Нефтехимия · фенол и ацетон","en":"Petrochemicals · phenol & acetone","fr":"Pétrochimie · phénol et acétone","ar":"البتروكيماويات · الفينول والأسيتون"},"projects":[{"name":{"ru":"Техническое перевооружение производства фенола и ацетона (цеха 101–105)","en":"Phenol and acetone production modernization (shops 101–105)","fr":"Modernisation de la production de phénol et d’acétone (ateliers 101–105)","ar":"التحديث التقني لإنتاج الفينول والأسيتون (الورش 101–105)"},"year":"—","location":"Омск, Россия","scope":{"ru":"Реализованный объект компании «ЭТАЛОН».","en":"Project executed and completed by ETALON (owner-confirmed). The 2024 corporate presentation identifies the facility but does not detail the individual construction packages or quantities.","fr":"Projet réalisé et achevé par ETALON (information confirmée par le propriétaire). La présentation d’entreprise de 2024 identifie l’ouvrage sans détailler les lots exécutés ni les quantités.","ar":"مشروع أنجزته شركة إيتالون."},"metrics":[],"image":"etalon_industry_14.webp","scope_undisclosed":true}],"legal_ar":"شركة أومسكي كاوتشوك المساهمة العامة"},{"id":"sterlitamak","brand":"etalon","category":"residential","name":{"ru":"Жилое строительство — Стерлитамак","en":"Residential construction — Sterlitamak","fr":"Construction résidentielle — Sterlitamak","ar":"البناء السكني — ستيرليتاماك"},"legal":"Жилищное строительство — Стерлитамак","image":"etalon_industry_16.webp","summary":{"ru":"Жилищное строительство · Башкортостан","en":"Housing · Bashkortostan","fr":"Logement · Bachkortostan","ar":"البناء السكني · باشكورتوستان"},"projects":[{"name":{"ru":"Многоквартирный жилой дом","en":"Multi-apartment residential building","fr":"Immeuble collectif résidentiel","ar":"مبنى سكني متعدد الشقق"},"year":"—","location":"Стерлитамак, Россия","scope":{"ru":"Реализованный объект компании «ЭТАЛОН».","en":"Project executed and completed by ETALON (owner-confirmed). The 2024 corporate presentation identifies the facility but does not detail the individual construction packages or quantities.","fr":"Projet réalisé et achevé par ETALON (information confirmée par le propriétaire). La présentation d’entreprise de 2024 identifie l’ouvrage sans détailler les lots exécutés ni les quantités.","ar":"مشروع أنجزته شركة إيتالون."},"metrics":[],"image":"etalon_industry_16.webp","scope_undisclosed":true}],"legal_ar":"البناء السكني — ستيرليتاماك"},{"id":"volkovsky","brand":"etalon","category":"industry","name":{"ru":"УГМК / АО «Святогор»","en":"UMMC / Svyatogor","fr":"UMMC / Svyatogor","ar":"أو جي إم كا / سفياتوغور"},"legal":"УГМК / АО «Святогор»","image":"volkovsky-3.jpg","summary":{"ru":"Волковский ГОК · Свердловская область","en":"Volkovsky mining complex · Sverdlovsk Region","fr":"Complexe minier Volkovsky · région de Sverdlovsk","ar":"مجمع فولكوفسكي للتعدين · مقاطعة سفيردلوفسك"},"projects":[{"name":{"ru":"Волковский ГОК — третья очередь","en":"Volkovsky mining complex — phase 3","fr":"Complexe minier Volkovsky — troisième tranche","ar":"مجمع فولكوفسكي للتعدين — المرحلة الثالثة"},"year":"2026","location":{"ru":"Кушвинский городской округ, Россия","en":"Kushva district, Russia","fr":"District de Kouchva, Russie","ar":"منطقة كوشفا، روسيا"},"scope":{"ru":"Проектный опыт команды: строительство очистных сооружений, устройство железобетонных фундаментов, гидроизоляция и монтаж оборудования. Цифровое планирование и контроль фактического выполнения.","en":"Team project experience: wastewater treatment facilities, reinforced-concrete foundations, waterproofing and equipment installation. Digital planning and progress monitoring.","fr":"Expérience de l’équipe : ouvrages de traitement des eaux, fondations en béton armé, étanchéité et montage d’équipements. Planification numérique et suivi d’avancement.","ar":"خبرة فريق العمل: إنشاء مرافق معالجة المياه، وتنفيذ الأساسات الخرسانية المسلحة والعزل المائي وتركيب المعدات. التخطيط الرقمي ومتابعة تقدم الأعمال."},"metrics":[],"image":"volkovsky-3.jpg"}]}];
+  const dict = {"ru":{"nav_projects":"Выполненные работы","hero_partner":"CERTUS GROUP — дочерняя компания «Эталона» в Алжире","hierarchy_kicker":"РОССИЙСКИЙ ОПЫТ. АЛЖИРСКОЕ ПРИСУТСТВИЕ.","hierarchy_title":"Промышленный опыт <em>ЭТАЛОНА.</em><br>Новая география <em>CERTUS.</em>","hierarchy_intro":"Все представленные объекты России относятся к завершённым работам компании «ЭТАЛОН», в том числе выполненным её дочерними предприятиями. CERTUS GROUP — дочерняя компания «ЭТАЛОНА» в Алжире и выводит опыт компании на африканский рынок.","hier_etalon_label":"РОССИЯ • ВЫПОЛНЕННЫЕ РАБОТЫ","hier_etalon_body":"Реальные объекты, выполненные работы и заказчики в России.","hier_arrow":"ДОЧЕРНЯЯ КОМПАНИЯ","hier_certus_label":"АЛЖИР • ДОЧЕРНЯЯ КОМПАНИЯ","hier_certus_body":"Инжиниринг, строительство и строительный интеллект для проектов Алжира и Африки.","clients_kicker":"ВЫПОЛНЕННЫЕ РАБОТЫ • ЭТАЛОН / РОССИЯ","clients_title":"Российские заказчики.<br><em>Реальные выполненные проекты.</em>","clients_intro":"Все проекты сохранены в едином портфолио «ЭТАЛОНА». Нажмите на заказчика — откроются конкретные объекты, годы, виды работ и фотографии из материалов компании.","count_customers":"ЗАКАЗЧИКОВ / ОБЪЕКТОВ","count_objects":"ВЫПОЛНЕННЫХ ПРОЕКТОВ","search_label":"Поиск по заказчику и проекту","search_placeholder":"Найти заказчика или объект","list_all":"ЭТАЛОН • ВСЕ ВЫПОЛНЕННЫЕ ПРОЕКТЫ В РОССИИ","no_results":"Совпадений нет. Измените запрос или фильтр.","clients_note":"","back":"← Все заказчики","client_ref":"ЗАКАЗЧИК","client_count":"ПРОЕКТА","client_count_many":"ПРОЕКТОВ","client_cases":"РАБОТЫ И ОБЪЕКТЫ","detail_customer":"ЗАКАЗЧИК / ОРГАНИЗАЦИЯ","detail_project":"ОБЪЕКТ","detail_time":"ПЕРИОД","detail_location":"ЛОКАЦИЯ","detail_scope":"ВЫПОЛНЕННЫЕ РАБОТЫ / СОДЕРЖАНИЕ","detail_contact":"Есть сложный проект? Покажите нам задачу.","detail_cta":"Обсудить проект →","group_etalon":"ВЫПОЛНЕННЫЕ ПРОЕКТЫ «ЭТАЛОНА»","group_etalon_desc":"Портфолио выполненных проектов компании «ЭТАЛОН» в России, в том числе опыт дочерних предприятий. CERTUS GROUP — алжирская дочерняя компания, использующая экспертизу материнской группы.","shown":"Показано","of":"из","clients_word":"заказчиков","year_na":"—","privacy_note":""},"en":{"nav_projects":"Completed works","hero_partner":"CERTUS GROUP — the Algeria-based subsidiary of ETALON","hierarchy_kicker":"RUSSIAN EXPERIENCE. ALGERIAN PRESENCE.","hierarchy_title":"ETALON’s industrial track record.<br><em>CERTUS in Africa.</em>","hierarchy_intro":"All Russian projects shown here form part of ETALON Group’s completed work, including projects delivered by its subsidiaries. CERTUS GROUP is ETALON’s subsidiary in Algeria, bringing the group’s experience to African markets.","hier_etalon_label":"RUSSIA • DELIVERED WORKS","hier_etalon_body":"Real project sites, executed works and customers in Russia.","hier_arrow":"SUBSIDIARY","hier_certus_label":"ALGERIA • SUBSIDIARY","hier_certus_body":"Engineering, construction and Construction Intelligence for Algeria and Africa.","clients_kicker":"COMPLETED WORKS • ETALON / RUSSIA","clients_title":"Russian clients.<br><em>Projects delivered.</em>","clients_intro":"All projects are retained in one ETALON portfolio. Select a client to view completed facilities, dates, work scope and source photographs.","count_customers":"CLIENTS / SITES","count_objects":"COMPLETED PROJECTS","search_label":"Search clients and projects","search_placeholder":"Find a client or facility","list_all":"ETALON • COMPLETED PROJECTS IN RUSSIA","no_results":"Nothing matched. Try a different query or filter.","clients_note":"","back":"← All clients","client_ref":"CLIENT","client_count":"PROJECT","client_count_many":"PROJECTS","client_cases":"PROJECT SCOPE","detail_customer":"CLIENT / ORGANIZATION","detail_project":"PROJECT","detail_time":"PERIOD","detail_location":"LOCATION","detail_scope":"EXECUTED WORK / REPORTED SCOPE","detail_contact":"Have a complex project? Let’s discuss the challenge.","detail_cta":"Discuss your project →","group_etalon":"ETALON COMPLETED PROJECTS","group_etalon_desc":"Completed projects in Russia from ETALON Group’s record, including work of subsidiaries. CERTUS GROUP is its Algeria-based subsidiary building on the group’s experience.","shown":"Showing","of":"of","clients_word":"clients","year_na":"—","privacy_note":""},"fr":{"nav_projects":"Réalisations","hero_partner":"CERTUS GROUP — filiale d’ETALON en Algérie","hierarchy_kicker":"EXPÉRIENCE RUSSE. PRÉSENCE ALGÉRIENNE.","hierarchy_title":"L’expérience industrielle d’<em>ETALON.</em><br>La nouvelle géographie de <em>CERTUS.</em>","hierarchy_intro":"Tous les projets russes présentés font partie des réalisations achevées du groupe ETALON, y compris celles de ses filiales. CERTUS GROUP, filiale d’ETALON en Algérie, développe cette expérience sur les marchés africains.","hier_etalon_label":"RUSSIE • TRAVAUX RÉALISÉS","hier_etalon_body":"Sites réels, travaux exécutés et références clients en Russie.","hier_arrow":"FILIALE","hier_certus_label":"ALGÉRIE • FILIALE","hier_certus_body":"Ingénierie, construction et Construction Intelligence pour l’Algérie et l’Afrique.","clients_kicker":"TRAVAUX RÉALISÉS • ETALON / RUSSIE","clients_title":"Clients russes.<br><em>Projets réalisés.</em>","clients_intro":"Tous les projets sont conservés dans un seul portefeuille ETALON. Sélectionnez un client pour afficher les ouvrages, les dates, les travaux et les photographies.","count_customers":"CLIENTS / SITES","count_objects":"PROJETS RÉALISÉS","search_label":"Rechercher un client ou un projet","search_placeholder":"Chercher un client ou un ouvrage","list_all":"ETALON • PROJETS RÉALISÉS EN RUSSIE","no_results":"Aucun résultat. Modifiez votre recherche ou le filtre.","clients_note":"","back":"← Tous les clients","client_ref":"CLIENT","client_count":"PROJET","client_count_many":"PROJETS","client_cases":"TRAVAUX ET OUVRAGES","detail_customer":"CLIENT / ORGANISATION","detail_project":"OUVRAGE","detail_time":"PÉRIODE","detail_location":"LOCALISATION","detail_scope":"TRAVAUX RÉALISÉS / PÉRIMÈTRE DÉCLARÉ","detail_contact":"Un projet complexe ? Parlons de vos enjeux.","detail_cta":"Discuter du projet →","group_etalon":"PROJETS RÉALISÉS PAR ETALON","group_etalon_desc":"Projets achevés en Russie par le groupe ETALON, y compris ses filiales. CERTUS GROUP est sa filiale en Algérie et s’appuie sur cette expérience.","shown":"Affichés","of":"sur","clients_word":"clients","year_na":"—","privacy_note":""}};
+  const grid = document.getElementById('clientGrid');
+  const search = document.getElementById('clientSearch');
+  const shade = document.getElementById('detailShade');
+  const detail = document.getElementById('clientDetail');
+  const detailBody = document.getElementById('detailBody');
+
+
+  let currentId = null;
+  let lastFocused = null;
+  const hubAdditions={"ru": {"count_objects": "ПРОЕКТА В ПОРТФОЛИО", "clients_kicker": "ПРОЕКТНЫЙ ОПЫТ • ЭТАЛОН / РОССИЯ", "clients_title": "Российские заказчики.<br><em>Проектный опыт.</em>", "clients_intro": "Проекты группы «ЭТАЛОН». Выберите заказчика, чтобы увидеть объекты, работы и фотографии.", "group_etalon": "ПРОЕКТНЫЙ ОПЫТ «ЭТАЛОНА»", "group_etalon_desc": "Проектный опыт группы «ЭТАЛОН», включая дочерние предприятия. CERTUS GROUP развивает эту экспертизу в Алжире.", "hierarchy_intro": "Промышленные проекты группы «ЭТАЛОН» и её дочерних предприятий в России. CERTUS GROUP — алжирская дочерняя компания, развивающая накопленную экспертизу на рынках Африки.", "list_all": "ЭТАЛОН • ПРОЕКТЫ В РОССИИ"}, "en": {"count_objects": "PROJECTS IN PORTFOLIO", "clients_kicker": "PROJECT EXPERIENCE • ETALON / RUSSIA", "clients_title": "Russian clients.<br><em>Project experience.</em>", "clients_intro": "Projects from ETALON Group’s portfolio. Select a client for sites, works and photos.", "group_etalon": "ETALON PROJECT EXPERIENCE", "group_etalon_desc": "Project experience of ETALON Group and its subsidiaries. CERTUS GROUP develops this expertise in Algeria.", "hierarchy_intro": "Industrial projects of ETALON Group and its subsidiaries in Russia. CERTUS GROUP is the Algeria-based subsidiary developing this expertise across African markets.", "list_all": "ETALON • PROJECTS IN RUSSIA"}, "fr": {"count_objects": "PROJETS DU PORTEFEUILLE", "clients_kicker": "EXPÉRIENCE PROJET • ETALON / RUSSIE", "clients_title": "Clients russes.<br><em>Expérience de projets.</em>", "clients_intro": "Projets du groupe ETALON. Sélectionnez un client pour voir les ouvrages, travaux et photos.", "group_etalon": "EXPÉRIENCE PROJET D’ETALON", "group_etalon_desc": "Expérience du groupe ETALON et de ses filiales. CERTUS GROUP développe cette expertise en Algérie.", "hierarchy_intro": "Projets industriels du groupe ETALON et de ses filiales en Russie. CERTUS GROUP est sa filiale algérienne et développe cette expertise sur les marchés africains.", "list_all": "ETALON • PROJETS EN RUSSIE"}};
+  for(const code of Object.keys(hubAdditions))Object.assign(dict[code],hubAdditions[code]);
+  dict.ar = {"nav_projects": "خبراتنا ومشاريعنا", "hero_partner": "CERTUS GROUP — شركة تابعة لإيتالون في الجزائر", "hierarchy_kicker": "خبرة روسية. حضور جزائري.", "hierarchy_title": "خبرة <em>إيتالون</em> الصناعية.<br>آفاق <em>CERTUS</em> الجديدة.", "hierarchy_intro": "تعرض المشاريع الروسية خبرة إيتالون وشركاتها التابعة. CERTUS GROUP شركة تابعة لإيتالون في الجزائر، تنقل خبرتها إلى السوق الأفريقية.", "hier_etalon_label": "روسيا • الخبرة والمشاريع", "hier_etalon_body": "مشاريع فعلية وخبرة تنفيذية وعملاء في روسيا.", "hier_arrow": "شركة تابعة", "hier_certus_label": "الجزائر • شركة تابعة", "hier_certus_body": "الهندسة والبناء وذكاء البناء لمشاريع الجزائر وأفريقيا.", "clients_kicker": "الخبرة والمشاريع • إيتالون / روسيا", "clients_title": "عملاء في روسيا.<br><em>مشاريع وخبرة ميدانية.</em>", "clients_intro": "جميع المشاريع مدرجة في ملف أعمال إيتالون الموحد. اختر العميل للاطلاع على المشاريع والسنوات وأنواع الأعمال والصور من مواد الشركة.", "count_customers": "العملاء", "count_objects": "المشاريع", "search_label": "البحث حسب العميل والمشروع", "search_placeholder": "ابحث عن عميل أو مشروع", "list_all": "إيتالون • ملف المشاريع في روسيا", "no_results": "لا توجد نتائج مطابقة. غيّر البحث أو التصفية.", "clients_note": "", "back": "جميع العملاء →", "client_ref": "العميل", "client_count": "مشاريع", "client_count_many": "مشروعًا", "client_cases": "الأعمال والمشاريع", "detail_customer": "العميل / المؤسسة", "detail_project": "المشروع", "detail_time": "الفترة", "detail_location": "الموقع", "detail_scope": "نطاق الأعمال / المحتوى", "detail_contact": "لديك مشروع معقد؟ شاركنا المهمة.", "detail_cta": "ناقش مشروعك ←", "group_etalon": "الخبرة والمشاريع لدى إيتالون", "group_etalon_desc": "ملف مشاريع إيتالون في روسيا، بما فيها خبرة شركاتها التابعة. CERTUS GROUP شركة تابعة في الجزائر تستند إلى خبرة المجموعة الأم.", "shown": "المعروض", "of": "من", "clients_word": "عميلًا", "year_na": "—", "privacy_note": ""};
+  const translations = lang => dict[lang] || dict.ru;
+  const language = () => dict[document.documentElement.lang] ? document.documentElement.lang : 'ru';
+  const tr = (v,lang) => typeof v==='string' ? v : (v?.[lang] || v?.ru || '');
+  const esc = (v='') => String(v).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  document.getElementById("clientCount").textContent=clients.length;
+  document.getElementById("projectCount").textContent=clients.reduce((n,c)=>n+c.projects.length,0);
+  const brandName = () => ({ru:'ЭТАЛОН',en:'ETALON',fr:'ETALON',ar:'إيتالون'})[language()];
+  const projectWords = (n,t) => language()==='ar' ? (n===1?'مشروع':n===2?'مشروعان':'مشاريع') : language()==='ru' ? (n%10===1 && n%100!==11 ? 'проект' : n%10>=2 && n%10<=4 && !(n%100>=12&&n%100<=14) ? 'проекта' : 'проектов') : n===1?t.client_count:t.client_count_many;
+  function localYear(val,lang){
+    if (val==='—') return translations(lang).year_na;
+    if (val.startsWith('с 2008')) return ({ru:val,en:'Since 2008',fr:'Depuis 2008',ar:'منذ 2008'})[lang];
+    return val;
+  }
+  function localPlace(v,lang){
+    if(typeof v==='object')return tr(v,lang);
+    if(lang==='ru')return v;
+    if(lang==='ar')return ({"Верхняя Салда, Россия": "فيرخنيايا سالدا، روسيا", "Нижний Тагил, Россия": "نيجني تاغيل، روسيا", "Алексин, Россия": "أليكسين، روسيا", "Екатеринбург, Россия": "يكاترينبورغ، روسيا", "Красноуральск, Россия": "كراسنورالسك، روسيا", "Кушва, Россия": "كوشفا، روسيا", "Ижевск, Россия": "إيجيفسك، روسيا", "Пермь, Россия": "بيرم، روسيا", "Россия": "روسيا", "Восточно-Уренгойский лицензионный участок, Россия": "منطقة ترخيص شرق أورينغوي، روسيا", "Новокуйбышевск, Россия": "نوفوكويبيشيفسك، روسيا", "Башнефть-УНПЗ, Россия": "باش نفط — مصفاة أوفا، روسيا", "Уфа, Россия": "أوفا، روسيا", "Омск, Россия": "أومسك، روسيا", "Стерлитамак, Россия": "ستيرليتاماك، روسيا"})[v]||v;
+    const pairs={
+      'Верхняя Салда, Россия':['Verkhnyaya Salda, Russia','Verkhnyaya Salda, Russie'],
+      'Нижний Тагил, Россия':['Nizhny Tagil, Russia','Nijni Taguil, Russie'],
+      'Алексин, Россия':['Aleksin, Russia','Aleksine, Russie'],
+      'Екатеринбург, Россия':['Yekaterinburg, Russia','Ekaterinbourg, Russie'],
+      'Красноуральск, Россия':['Krasnouralsk, Russia','Krasnoouralsk, Russie'],
+      'Кушва, Россия':['Kushva, Russia','Kouchva, Russie'],
+      'Ижевск, Россия':['Izhevsk, Russia','Ijevsk, Russie'],
+      'Пермь, Россия':['Perm, Russia','Perm, Russie'],
+      'Россия':['Russia','Russie']
+    };const t=pairs[v];return t ? t[lang==='en'?0:1] : v;
+  }
+  function tApply(lang){
+    const t=translations(lang);
+    document.querySelectorAll('[data-hub-t],[data-hub-html],[data-hub-placeholder]').forEach(el=>{
+      const key=el.dataset.hubT||el.dataset.hubHtml||el.dataset.hubPlaceholder;
+      if(!(key in t))return;
+      if(el.dataset.hubHtml)el.innerHTML=t[key];
+      else if(el.dataset.hubPlaceholder)el.setAttribute('placeholder',t[key]);
+      else el.textContent=t[key];
+    });
+  }
+  function renderClients(){
+    const lang=language(); const t=translations(lang);
+    const term=search.value.trim().toLowerCase();
+    const entries=clients.filter(c => (!term || JSON.stringify(c).toLowerCase().includes(term)));
+    grid.innerHTML=entries.map(c=>{
+      const name=esc(tr(c.name,lang));
+      const summary=esc(tr(c.summary,lang));
+      const n=c.projects.length;
+      return `<button class="client-tile" type="button" data-client="${esc(c.id)}" aria-label="${esc(t.client_ref)}: ${name}. ${n} ${esc(projectWords(n,t))}">
+        <span class="tile-media"><img src="${asset(c.image)}" loading="lazy" alt="${esc(name)} — project photography"><span class="tile-source">${brandName(c.brand)}</span></span>
+        <span class="tile-body"><strong>${name}</strong><p>${summary}</p><span class="tile-foot"><span>${n} ${esc(projectWords(n,t))}</span><span aria-hidden="true">↗</span></span></span>
+      </button>`;
+    }).join('');
+    document.getElementById('clientsEmpty').hidden=entries.length>0;
+    document.getElementById('clientListTitle').textContent=t.list_all;
+    document.getElementById('listCount').textContent=`${t.shown} ${entries.length} ${t.of} ${clients.length}`;
+  }
+  function detailProject(p,lang,t){
+    const metrics=(p.metrics||[]).map(m=>`<div class="detail-metric"><b>${esc(m.value)}</b><span>${esc(m[lang]||m.ru)}</span></div>`).join('');
+    const status="";
+    let source="";
+    if(lang==='en')source=source.replace('ЭТАЛОН — презентация, стр.', 'ETALON presentation, pp.').replace('Корпоративная презентация 2024, слайд','Corporate presentation 2024, slide');
+    if(lang==='fr')source=source.replace('ЭТАЛОН — презентация, стр.', 'Présentation ETALON, p.').replace('Корпоративная презентация 2024, слайд','Présentation institutionnelle 2024, diapositive');
+    return `<article class="detail-project">
+      <img src="${asset(p.image)}" alt="${esc(tr(p.name,lang))}" loading="lazy">
+      <div>
+        <div class="detail-project-head"><span>${esc(t.detail_project)} / ${esc(t.detail_time)}: ${esc(localYear(p.year,lang))}</span><span>${esc(t.detail_location)}: ${esc(localPlace(p.location,lang))}</span></div>
+        <h3>${esc(tr(p.name,lang))}</h3>
+        <p>${esc(tr(p.scope,lang))}</p>
+        ${metrics?`<div class="detail-metrics">${metrics}</div>`:''}
+        
+        
+      </div>
+    </article>`;
+  }
+  function openDetail(id){
+    const c=clients.find(x=>x.id===id);if(!c)return closeDetail();
+    const lang=language();const t=translations(lang);
+    currentId=id;
+    const name=tr(c.name,lang);
+    detailBody.innerHTML=`
+      <div class="detail-cover"><img src="${asset(c.image)}" alt="${esc(name)}"><div class="detail-cover-copy"><span>${esc(t.group_etalon)} • ${c.projects.length} ${esc(projectWords(c.projects.length,t))}</span><h2 id="detailTitle">${esc(name)}</h2><p>${esc(t.group_etalon_desc)}</p></div></div>
+      <div class="detail-content"><div class="detail-leadline"><div><span>${esc(t.detail_customer)}</span><strong>${esc(lang==='ar'?(c.legal_ar||c.legal):c.legal)}</strong></div><b>${esc(t.client_cases)} / ${String(c.projects.length).padStart(2,'0')}</b></div>
+      ${c.projects.map(p=>detailProject(p,lang,t)).join('')}
+      <div class="detail-cta"><strong>${esc(t.detail_contact)}</strong><a href="#contact" id="detailCTA">${esc(t.detail_cta)}</a></div>
+      </div>`;
+    detail.hidden=false;shade.hidden=false;document.body.classList.add('detail-open');
+    document.getElementById('detailBack').textContent=t.back;
+    const button=document.getElementById('detailClose');button.setAttribute('aria-label',t.back);
+    if(document.activeElement?.closest('.client-tile'))lastFocused=document.activeElement;
+    button.focus({preventScroll:true});
+    detail.querySelector('#detailCTA')?.addEventListener('click',()=>{closeDetail();});
+  }
+  function closeDetail(){
+    const wasOpen=!detail.hidden;
+    detail.hidden=true;shade.hidden=true;document.body.classList.remove('detail-open');currentId=null;
+    if(wasOpen&&lastFocused&&document.contains(lastFocused))lastFocused.focus({preventScroll:true});
+  }
+  function syncHash(){
+    const hash=decodeURIComponent(location.hash||'');
+    if(hash.startsWith('#client/'))openDetail(hash.replace('#client/',''));
+    else closeDetail();
+  }
+  grid.addEventListener('click', e=>{const btn=e.target.closest('[data-client]');if(!btn)return;lastFocused=btn;location.hash='client/'+encodeURIComponent(btn.dataset.client);if(location.hash==='#client/'+btn.dataset.client)syncHash();});
+  shade.addEventListener('click',()=>location.hash='clients');
+  document.getElementById('detailClose').addEventListener('click',()=>location.hash='clients');
+  document.getElementById('detailBack').addEventListener('click',()=>closeDetail());
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!detail.hidden){e.preventDefault();location.hash='clients';}});
+  window.addEventListener('hashchange',syncHash);
+  search.addEventListener('input',renderClients);
+  document.querySelectorAll('[data-lang]').forEach(btn=>btn.addEventListener('click',()=>{
+    const lang=language(); tApply(lang);renderClients(); if(currentId)openDetail(currentId);
+  }));
+  const lang=language();
+  tApply(lang);renderClients();syncHash();
+})();
+</script>
+<script src="/contact-send.js"></script>
+</body>
+</html>
+
+<style id="final-mobile-layout-cleanup">@media(max-width:800px){.gallery-disclaimer{display:none!important}.detail-state,.detail-source{display:none!important}.clients-v4{min-height:0!important}.section{height:auto!important}} </style>
